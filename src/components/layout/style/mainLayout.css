@@ -1,0 +1,38 @@
+.topPanel {
+    display: flex;
+    flex: 0 1 150px;
+}
+
+.workingArea {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.bottomPanel {
+    display: flex;
+    flex: 0 1 150px;
+}
+
+.mainLayout {
+    display: flex;
+    flex: 1 1 auto;
+    background: lightgray;
+    flex-direction: column;
+    height: 100%;
+}
+
+.leftPanel {
+    display: flex;
+    flex: 1 1 25%;
+}
+
+.centralPanel {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+}
+
+.rightPanel {
+    display: flex;
+    flex: 1 1 25%;
+}

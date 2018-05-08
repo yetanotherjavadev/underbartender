@@ -1,17 +1,14 @@
 import React, {PureComponent} from 'react';
+import './style/selectorWidget.css';
 
 class SelectorWidget extends PureComponent {
     constructor(props) {
         super(props);
-
-        this.state = {
-            count: 0
-        }
     }
 
     render() {
         return (
-            <div className="omgdiv flexMain">aaa</div>
+            <div className="selectorWidget">Selector</div>
         )
     }
 }
