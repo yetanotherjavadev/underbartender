@@ -4,4 +4,3 @@ import MainLayout from "./components/layout/MainLayout";
 import "./index.css";
 
 ReactDOM.render(<MainLayout/>, document.getElementById("root"));
-// registerServiceWorker();
