@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Water",
+    "strength": 0,
+    "density": 1.0,
+    "sugar": 0.0,
+    "calories": 0,
+    "countryOfOriginId": 1,
+    "category": "NA"
+  },
+  {
+    "id": 2,
+    "name": "Cola",
+    "strength": 0,
+    "density": 1.1,
+    "sugar": 11.3,
+    "calories": 45.2,
+    "countryOfOriginId": 1,
+    "category": "NA"
+  },
+  {
+    "id": 3,
+    "name": "Vodka",
+    "strength": 40,
+    "density": 0.94,
+    "sugar": 0.0,
+    "calories": 140,
+    "countryOfOriginId": 2,
+    "category": "DISTILLATE"
+  }
+]

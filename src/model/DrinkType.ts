@@ -1,0 +1,7 @@
+enum DrinkType {
+	MALE,
+	FEMALE,
+	SAMOAN_PUB_LIKE,
+	EXTREME,
+	PERFORMANCE
+}
