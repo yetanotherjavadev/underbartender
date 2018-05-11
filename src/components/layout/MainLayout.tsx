@@ -1,10 +1,14 @@
-import { PureComponent } from "react";
 import * as React from "react";
+import { PureComponent } from "react";
 import HeaderWidget from "../Header/HeaderWidget";
 import SelectorWidget from "../Selector/SelectorWidget";
 import "./style/mainLayout.css";
+import { Liquid } from "../../model/Liquid";
 
 class MainLayout extends PureComponent {
+
+	liquids: Array<Liquid> = this.readLiquids();
+
 	public render() {
 		return (
 			<div className="mainLayout">
@@ -14,7 +18,7 @@ class MainLayout extends PureComponent {
 				<div className="workingArea">
 					<div className="leftPanel"/>
 					<div className="centralPanel">
-						<SelectorWidget/>
+						<SelectorWidget liquids={this.liquids}/>
 					</div>
 					<div className="rightPanel"/>
 				</div>
@@ -23,6 +27,11 @@ class MainLayout extends PureComponent {
 				</div>
 			</div>
 		);
+	}
+
+	private readLiquids(): Array<Liquid> {
+
+		return null;
 	}
 }
 
