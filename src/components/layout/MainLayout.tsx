@@ -4,6 +4,7 @@ import HeaderWidget from "../Header/HeaderWidget";
 import SelectorWidget from "../Selector/SelectorWidget";
 import "./style/mainLayout.css";
 import { Liquid } from "../../model/Liquid";
+import data from "../../mockdata/liquids.json";
 
 class MainLayout extends PureComponent {
 
@@ -30,8 +31,7 @@ class MainLayout extends PureComponent {
 	}
 
 	private readLiquids(): Array<Liquid> {
-
-		return null;
+		return data;
 	}
 }
 
