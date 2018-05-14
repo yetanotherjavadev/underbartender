@@ -1,0 +1,32 @@
+.widget {
+    height: 100px;
+    background: #828282;
+    align-self: center;
+    display: flex;
+    flex: 0 1 300px;
+}
+
+.liquidsList {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.liquidListItem {
+    display: flex;
+    flex: 1 1 auto;
+    color: black;
+    font-style: italic;
+    font-size: 12px
+}
+
+.liquidName {
+    display: flex;
+    flex: 1 1 50%;
+}
+
+.liquidStrength,
+.liquidSugar {
+    display: flex;
+    flex: 0 1 25%;
+}

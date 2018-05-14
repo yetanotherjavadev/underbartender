@@ -1,10 +1,11 @@
 import * as React from "react";
 import { PureComponent } from "react";
 import HeaderWidget from "../Header/HeaderWidget";
-import SelectorWidget from "../Selector/SelectorWidget";
+import SelectorWidget from "../liquidslist/LiquidsList";
 import "./style/mainLayout.css";
 import { Liquid } from "../../model/Liquid";
 import data from "../../mockdata/liquids.json";
+import SearchBox from "../searchbox/SearchBox";
 
 class MainLayout extends PureComponent {
 
@@ -15,6 +16,7 @@ class MainLayout extends PureComponent {
 			<div className="mainLayout">
 				<div className="topPanel">
 					<HeaderWidget/>
+					<SearchBox/>
 				</div>
 				<div className="workingArea">
 					<div className="leftPanel"/>
