@@ -6,6 +6,7 @@ import "./style/mainLayout.css";
 import { Liquid } from "../../model/Liquid";
 import data from "../../mockdata/liquids.json";
 import SearchBox from "../searchbox/SearchBox";
+import Menu from "../mainmenu/Menu";
 
 class MainLayout extends PureComponent {
 
@@ -16,17 +17,18 @@ class MainLayout extends PureComponent {
 			<div className="mainLayout">
 				<div className="topPanel">
 					<HeaderWidget/>
-					<SearchBox/>
+					<Menu/>
 				</div>
 				<div className="workingArea">
 					<div className="leftPanel"/>
 					<div className="centralPanel">
+						<SearchBox/>
 						<SelectorWidget liquids={this.liquids}/>
 					</div>
 					<div className="rightPanel"/>
 				</div>
 				<div className="bottomPanel">
-					<HeaderWidget/>
+					Bottom panel placeholder
 				</div>
 			</div>
 		);

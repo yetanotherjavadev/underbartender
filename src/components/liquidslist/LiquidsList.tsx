@@ -7,7 +7,7 @@ export type LiquidProps = {
 	liquids: Array<Liquid>;
 };
 
-class LiquidsList extends PureComponent<LiquidProps> {
+export default class LiquidsList extends PureComponent<LiquidProps> {
 	constructor(props: LiquidProps) {
 		super(props);
 	}
@@ -30,5 +30,3 @@ class LiquidsList extends PureComponent<LiquidProps> {
 		);
 	}
 }
-
-export default LiquidsList;

@@ -1,5 +1,6 @@
 import { PureComponent } from "react";
 import * as React from "react";
+import "./style/searchBox.css";
 
 class SearchBox extends PureComponent<any> {
 	constructor(props: any) {
@@ -8,9 +9,9 @@ class SearchBox extends PureComponent<any> {
 
 	public render() {
 		return (
-				<div className="main">
-					<input className="label"/>
-				</div>
+			<div className="main">
+				<input className="label"/>
+			</div>
 		);
 	}
 }

@@ -1,6 +1,7 @@
 .topPanel {
     display: flex;
     flex: 0 1 150px;
+    flex-direction: column;
 }
 
 .workingArea {
@@ -10,7 +11,7 @@
 
 .bottomPanel {
     display: flex;
-    flex: 0 1 150px;
+    flex: 0 1 50px;
 }
 
 .mainLayout {
@@ -30,6 +31,7 @@
     display: flex;
     flex: 1 1 50%;
     justify-content: center;
+    flex-direction: column;
 }
 
 .rightPanel {

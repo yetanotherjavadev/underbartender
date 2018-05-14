@@ -3,7 +3,8 @@
     background: #828282;
     align-self: center;
     display: flex;
-    flex: 0 1 300px;
+    flex: 0 1 auto;
+    width: 100%;
 }
 
 .liquidsList {
