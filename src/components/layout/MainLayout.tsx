@@ -1,16 +1,14 @@
 import * as React from "react";
 import { PureComponent } from "react";
 import HeaderWidget from "../Header/HeaderWidget";
-import SelectorWidget from "../liquidslist/LiquidsList";
 import "./style/mainLayout.css";
-import { Liquid } from "../../model/Liquid";
-import data from "../../mockdata/liquids.json";
-import SearchBox from "../searchbox/SearchBox";
 import Menu from "../mainmenu/Menu";
+import CocktailWidget from "../cocktailwidget/CocktailWidget";
+import { testRecipe } from "../../model/Recipe";
 
 class MainLayout extends PureComponent {
 
-	liquids: Array<Liquid> = this.readLiquids();
+	// liquids: Array<Liquid> = this.readLiquids();
 
 	public render() {
 		return (
@@ -22,8 +20,8 @@ class MainLayout extends PureComponent {
 				<div className="workingArea">
 					<div className="leftPanel"/>
 					<div className="centralPanel">
-						<SearchBox/>
-						<SelectorWidget liquids={this.liquids}/>
+						{/*<SearchBox/>*/}
+						<CocktailWidget recipe={testRecipe}/>
 					</div>
 					<div className="rightPanel"/>
 				</div>
@@ -33,10 +31,9 @@ class MainLayout extends PureComponent {
 			</div>
 		);
 	}
-
-	private readLiquids(): Array<Liquid> {
-		return data;
-	}
+	// private readLiquids(): Array<Liquid> {
+	// 	return data;
+	// }
 }
 
 export default MainLayout;

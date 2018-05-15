@@ -1,0 +1,43 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+}
+
+.headerLabel {
+    display: flex;
+    flex: 0 0 40px;
+    color: #485859;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.description {
+    display: flex;
+    flex: 0 0 30px;
+    font-size: 14px;
+    font-family: 'Roboto','PT Sans',sans-serif;
+    font-weight: 300;
+    color: #485859;
+}
+
+.ingredientsTable {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.ingredient {
+    font-size: 12px;
+    color: lightcoral;
+}
+
+.recipeText {
+    display: flex;
+    flex: 1 0 auto;
+    align-self: flex-end;
+    font-style: italic;
+    font-size: 12px;
+}
