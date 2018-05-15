@@ -1,0 +1,9 @@
+.listbox {
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem {
+    font-size: 12px;
+}

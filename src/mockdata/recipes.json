@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "name": "Racketeer",
+    "description": "Mixed Drink Recipe from Cocktail Builder",
+    "components": [
+      {
+        "name": "rye",
+        "amount": "1 oz"
+      },
+      {
+        "name": "Mezcal",
+        "amount": "1 oz"
+      },
+      {
+        "name": "benedictine",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "sweet vermouth",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Herbal Liqueur",
+        "amount": "1/4 oz"
+      },
+      {
+        "name": "Peychaud's Bitters",
+        "amount": "3 dash"
+      },
+      {
+        "name": "Islay Scotch",
+        "amount": "1 rinse"
+      }
+    ],
+    "text": "Rinse coupe, stir, strain, up.",
+    "strength": 20
+  },
+  {
+    "id": 2,
+    "name": "San Serif",
+    "description": "Mixed Drink Recipe from Cocktail Builder",
+    "components": [
+      {
+        "name": "rye",
+        "amount": "2 oz"
+      },
+      {
+        "name": "Aperol",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "St Germain",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Lemon Juice",
+        "amount": "1/4 oz"
+      },
+      {
+        "name": "lemon zest",
+        "amount": "1 oz"
+      },
+      {
+        "name": "Peychaud's Bitters",
+        "amount": "3 dash"
+      },
+      {
+        "name": "Islay Scotch",
+        "amount": "1 rinse"
+      }
+    ],
+    "text": "Lemon zest, Stir, Rocks, Lowball",
+    "strength": 15
+  },
+  {
+    "id": 2,
+    "name": "San Serif",
+    "description": "Mixed Drink Recipe from Cocktail Builder",
+    "components": [
+      {
+        "name": "Peychaud's Bitter",
+        "amount": "2 dash"
+      },
+      {
+        "name": "Irish whiskey",
+        "amount": "2 oz"
+      },
+      {
+        "name": "Herbal Liqueur",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Lemon Juice",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "simple syrup",
+        "amount": "1 tsp"
+      },
+      {
+        "name": "lemon peel",
+        "amount": "1 twist"
+      }
+    ],
+    "text": "In a pint glass muddle sugar and bitters. Add remaining ingredients, ice then shake and strain into a chilled cocktail glass. Garnish with a lemon twist.",
+    "strength": 18
+  }
+]
