@@ -4,9 +4,11 @@ import "./style/header.css";
 
 class HeaderWidget extends PureComponent {
 	public render() {
+		// const appName = "Underbartender";
+		const appName = "";
 		return (
 			<div className="headerPanel">
-				<div className="titleLabel">Underbartender</div>
+				<div className="titleLabel">{appName}</div>
 			</div>
 		);
 	}

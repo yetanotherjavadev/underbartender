@@ -1,0 +1,5 @@
+.cocktailsList {
+    display: flex;
+    flex: 0 0 300px;
+    border: 1px solid darkgray;
+}

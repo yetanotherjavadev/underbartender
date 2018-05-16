@@ -19,7 +19,7 @@ export default class CocktailWidget extends PureComponent<CocktailWidgetProps> {
 			</div>)
 		);
 		return (
-			<div className="main">
+			<div className="cocktailWidget">
 				<div className="headerLabel">{this.props.recipe.name}</div>
 				<div className="description">{this.props.recipe.description}</div>
 				<div className="ingredientsTable">
