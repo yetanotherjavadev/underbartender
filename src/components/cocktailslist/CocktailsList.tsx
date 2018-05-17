@@ -3,6 +3,8 @@ import * as React from "react";
 import "./style/cocktailList.css";
 import { ListGroup } from "react-bootstrap";
 import * as ListGroupItem from "react-bootstrap/lib/ListGroupItem";
+import { mainStore } from "../../redux/store/AppMainStore";
+import { changeSelectedItem } from "../../redux/actions/appstate.actions";
 
 export type CocktailsListProps = {
 	cocktails: Array<string>;
@@ -15,7 +17,13 @@ export default class CocktailsList extends PureComponent<CocktailsListProps> {
 
 	public render() {
 		const ingredients = this.props.cocktails.map((cocktailName) => (
-			<ListGroupItem key={cocktailName} onClick={() => {this.clickElement(cocktailName); }}>{cocktailName}</ListGroupItem>
+			<ListGroupItem
+				key={cocktailName}
+				onClick={() => {
+					this.selectItem(cocktailName);
+				}}
+			>{cocktailName}
+			</ListGroupItem>
 		));
 		return (
 			<ListGroup componentClass="ul" className="cocktailWidget">
@@ -24,10 +32,7 @@ export default class CocktailsList extends PureComponent<CocktailsListProps> {
 		);
 	}
 
-	// private clickElement(cocktailName: string): void = {
-	// 	window.console.log(cocktailName);
-	// }
-	private clickElement(cocktailName: string): void {
-		window.console.log(cocktailName);
+	private selectItem(cocktailName: string): void {
+		mainStore.dispatch(changeSelectedItem(cocktailName));
 	}
 }

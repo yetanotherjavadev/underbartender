@@ -6,10 +6,27 @@ import Menu from "../mainmenu/Menu";
 import CocktailWidget from "../cocktailwidget/CocktailWidget";
 import { testRecipe } from "../../model/Recipe";
 import CocktailsList from "../cocktailslist/CocktailsList";
+import { Dispatch } from "redux";
+import { AppState } from "../../state/AppState";
+import { connect } from "react-redux";
+
+const mapStateToProps = (state: AppState) => {
+	return {
+		selectedItem: state.selectedCocktail,
+		filter: state.filter
+	};
+};
+​
+const mapDispatchToProps = undefined;
+
+export connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(MainLayout);
 
 class MainLayout extends PureComponent {
 
-	// liquids: Array<Liquid> = this.readLiquids();
+
 	cocktails: Array<string> = ["White Russian", "Negroni", "Gin Tonic"];
 
 	public render() {
@@ -24,20 +41,13 @@ class MainLayout extends PureComponent {
 						<CocktailsList cocktails={this.cocktails}/>
 					</div>
 					<div className="centralPanel">
-						{/*<SearchBox/>*/}
 						<CocktailWidget recipe={testRecipe}/>
 					</div>
 					<div className="rightPanel"/>
 				</div>
-				{/*<div className="bottomPanel">*/}
-					{/*Bottom panel placeholder*/}
-				{/*</div>*/}
 			</div>
 		);
 	}
-	// private readLiquids(): Array<Liquid> {
-	// 	return data;
-	// }
 }
 
 export default MainLayout;

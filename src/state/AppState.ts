@@ -1,4 +1,6 @@
+// contains the whole state of the application
+// will most likely be divided into separate and independent parts each describing its own part of the state
 export class AppState {
-	selectedCocktail: number;
-	selectedTags: Array<string>;
+	public selectedCocktail: string;
+	public filter: string;
 }
