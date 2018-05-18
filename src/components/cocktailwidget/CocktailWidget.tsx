@@ -3,12 +3,11 @@ import { PureComponent } from "react";
 import "./style/cocktailWidget.css";
 import Recipe from "../../model/Recipe";
 
-export type CocktailWidgetProps = {
+export type CocktailWidgetStateProps = {
 	recipe: Recipe;
 };
 
-// todo add so-called "presentational components" or "container components" (aka "Presenters")
-export default class CocktailWidget extends PureComponent<CocktailWidgetProps> {
+export default class CocktailWidget extends PureComponent<CocktailWidgetStateProps> {
 	constructor(props: any) {
 		super(props);
 	}

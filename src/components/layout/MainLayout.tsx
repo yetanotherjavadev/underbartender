@@ -3,13 +3,10 @@ import { PureComponent } from "react";
 import HeaderWidget from "../Header/HeaderWidget";
 import "./style/mainLayout.css";
 import Menu from "../mainmenu/Menu";
-import CocktailWidget from "../cocktailwidget/CocktailWidget";
-import { testRecipe } from "../../model/Recipe";
-import CocktailsList from "../cocktailslist/CocktailsList";
+import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
+import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
 
 class MainLayout extends PureComponent {
-
-	cocktails: Array<string> = ["White Russian", "Negroni", "Gin Tonic"];
 
 	public render() {
 		return (
@@ -20,10 +17,10 @@ class MainLayout extends PureComponent {
 				</div>
 				<div className="workingArea">
 					<div className="leftPanel">
-						<CocktailsList cocktails={this.cocktails}/>
+						<CocktailsListContainer/>
 					</div>
 					<div className="centralPanel">
-						<CocktailWidget recipe={testRecipe}/>
+						<CocktailWidgetContainer/>
 					</div>
 					<div className="rightPanel"/>
 				</div>

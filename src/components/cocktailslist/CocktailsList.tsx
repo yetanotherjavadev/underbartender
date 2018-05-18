@@ -1,16 +1,18 @@
-import { PureComponent } from "react";
 import * as React from "react";
+import { PureComponent } from "react";
 import "./style/cocktailList.css";
 import { ListGroup } from "react-bootstrap";
 import * as ListGroupItem from "react-bootstrap/lib/ListGroupItem";
-import { mainStore } from "../../redux/store/AppMainStore";
-import { changeSelectedItem } from "../../redux/actions/appstate.actions";
 
-export type CocktailsListProps = {
+export type CocktailsListStateProps = {
 	cocktails: Array<string>;
 };
 
-export default class CocktailsList extends PureComponent<CocktailsListProps> {
+export type CocktailsListDispatchProps = {
+	onClick(clickedItem: string): void;
+};
+
+export default class CocktailsList extends PureComponent<CocktailsListStateProps & CocktailsListDispatchProps> {
 	constructor(props: any) {
 		super(props);
 	}
@@ -20,7 +22,7 @@ export default class CocktailsList extends PureComponent<CocktailsListProps> {
 			<ListGroupItem
 				key={cocktailName}
 				onClick={() => {
-					this.selectItem(cocktailName);
+					this.props.onClick(cocktailName);
 				}}
 			>{cocktailName}
 			</ListGroupItem>
@@ -30,9 +32,5 @@ export default class CocktailsList extends PureComponent<CocktailsListProps> {
 				{ingredients}
 			</ListGroup>
 		);
-	}
-
-	private selectItem(cocktailName: string): void {
-		mainStore.dispatch(changeSelectedItem(cocktailName));
 	}
 }

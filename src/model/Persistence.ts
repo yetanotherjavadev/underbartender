@@ -3,17 +3,13 @@ import data from "../mockdata/recipes.json";
 
 export class Persistence {
 
-	private recipes: Recipe[];
+	private static recipes = Persistence.getAllRecipes();
 
-	constructor() {
-		this.recipes = this.readRecipes();
+	static getRecipeByName(name: string): Recipe {
+		return Persistence.recipes.find((element) => element.name === name) || Persistence.recipes[0]; // defaults to first cocktail
 	}
 
-	public getRecipeByName(name: string): Recipe {
-		return this.recipes[0];
-	}
-
-	public readRecipes(): Array<Recipe> {
+	static getAllRecipes(): Array<Recipe> {
 		return data;
 	}
 }
