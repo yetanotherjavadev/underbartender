@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { AppState } from "../../state/AppState";
 
 const mapStateToProps = (state: AppState): CocktailWidgetStateProps => ({
-	recipe: Persistence.getRecipeByName(state.selectedCocktail)
+	recipe: Persistence.getRecipeById(state.selectedCocktailId)
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({

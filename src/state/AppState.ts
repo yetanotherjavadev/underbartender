@@ -2,6 +2,6 @@
 // will most likely be divided into separate and independent parts each describing its own part of the state
 
 export class AppState {
-	public selectedCocktail: string;
+	public selectedCocktailId: number;
 	public filter: string;
 }

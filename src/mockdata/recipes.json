@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Racketeer",
-    "description": "Mixed Drink Recipe from Cocktail Builder",
+    "description": "We love it just for the name",
     "components": [
       {
         "name": "rye",
@@ -39,7 +39,7 @@
   {
     "id": 2,
     "name": "San Serif",
-    "description": "Mixed Drink Recipe from Cocktail Builder",
+    "description": "Haha! Is this a font?",
     "components": [
       {
         "name": "rye",
@@ -74,9 +74,9 @@
     "strength": 15
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Something Strange",
-    "description": "Mixed Drink Recipe from Cocktail Builder",
+    "description": "Omg what was that?",
     "components": [
       {
         "name": "Peychaud's Bitter",
@@ -105,5 +105,50 @@
     ],
     "text": "In a pint glass muddle sugar and bitters. Add remaining ingredients, ice then shake and strain into a chilled cocktail glass. Garnish with a lemon twist.",
     "strength": 18
+  },
+  {
+    "id": 4,
+    "name": "Absolutely Lauderdale",
+    "description": "Every city dreams to be Miami",
+    "components": [
+      {
+        "name": "Absolut vodka",
+        "amount": "6 dash"
+      },
+      {
+        "name": "Triple Sec",
+        "amount": "6 oz"
+      },
+      {
+        "name": "Orange Juice",
+        "amount": "3 oz"
+      },
+      {
+        "name": "Cranberry Juice",
+        "amount": "3 oz"
+      },
+      {
+        "name": "Pineapple Juice",
+        "amount": "3 oz"
+      },
+      {
+        "name": "Lime Juice",
+        "amount": "1 oz"
+      },
+      {
+        "name": "Grenadine",
+        "amount": "1 oz"
+      },
+      {
+        "name": "Midori melon liqueur",
+        "amount": "1 oz"
+      },
+      {
+        "name": "7-Up",
+        "amount": "5 oz"
+      }
+    ],
+    "text": "Mix in large pitcher with ice and serve immediately.",
+    "strength": 12
   }
 ]

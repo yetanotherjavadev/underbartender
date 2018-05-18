@@ -4,7 +4,7 @@ import { combineReducers, Reducer } from "redux";
 
 // initial state of the app
 const initialState: AppState = {
-	selectedCocktail: "Racketeer",
+	selectedCocktailId: 1,
 	filter: ""
 };
 
@@ -16,7 +16,7 @@ export const changeFilterReducer = (state: string = initialState.filter, action:
 	return state;
 };
 
-export const changeSelectedItemReducer = (state: string = initialState.selectedCocktail, action: ActionPayload): string => {
+export const changeSelectedItemReducer = (state: number = initialState.selectedCocktailId, action: ActionPayload): number => {
 	if (action.type === ActionType.CHANGE_SELECTED_ITEM) {
 		return action.selectedItem;
 	}
@@ -26,6 +26,6 @@ export const changeSelectedItemReducer = (state: string = initialState.selectedC
 // reminder:
 // there should always be key:value syntax here for redux to understand which exact property should be changed in store
 export const combinedReducer = combineReducers({
-	selectedCocktail: changeSelectedItemReducer,
+	selectedCocktailId: changeSelectedItemReducer,
 	filter: changeFilterReducer
 }) as Reducer<AppState>;

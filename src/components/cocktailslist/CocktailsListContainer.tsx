@@ -6,12 +6,12 @@ import { AppState } from "../../state/AppState";
 import { changeSelectedItem } from "../../redux/actions/appstate.actions";
 
 const mapStateToProps = (state: AppState): CocktailsListStateProps => ({
-	cocktails: Persistence.getAllRecipes().map((recipe) => recipe.name) // all cocktails are not yet in State
+	cocktails: Persistence.getAllRecipes().map((recipe) => recipe.id) // all cocktails are not yet in State
 });
 
 const mapDispatchToProps = (dispatch: Dispatch): CocktailsListDispatchProps => ({
-	onClick: (name: string) => {
-		dispatch(changeSelectedItem(name));
+	onClick: (id: number) => {
+		dispatch(changeSelectedItem(id));
 	}
 });
 

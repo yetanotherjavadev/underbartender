@@ -5,12 +5,12 @@ export enum ActionType {
 
 export interface ActionPayload {
 	type: ActionType;
-	selectedItem: string;
+	selectedItem: number;
 	filter: string;
 }
 
-export function changeSelectedItem(newSelectedCocktail: string) {
-	return {type: ActionType.CHANGE_SELECTED_ITEM, selectedItem: newSelectedCocktail};
+export function changeSelectedItem(selectedItem: number) {
+	return {type: ActionType.CHANGE_SELECTED_ITEM, selectedItem: selectedItem};
 }
 
 export function setVisibilityFilter(filter: string) {

@@ -3,3 +3,19 @@
     flex: 0 0 300px;
     border: 1px solid darkgray;
 }
+
+.list-group-item {
+    background: lightblue;
+    font-size: 12px;
+    min-height: 30px;
+    border: 1px solid darkgray;
+    outline: none;
+}
+
+.list-group-item:not(:first-child) {
+    border-top: none;
+}
+
+.list-group-item:hover {
+    background: #a9ccd8;
+}

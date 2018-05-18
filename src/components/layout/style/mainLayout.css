@@ -22,9 +22,12 @@
     height: 100%;
 }
 
-.leftPanel {
+.leftPanel, .rightPanel {
     display: flex;
     flex: 1 1 25%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
 
 .centralPanel {
@@ -32,9 +35,6 @@
     flex: 1 1 50%;
     justify-content: center;
     flex-direction: column;
-}
-
-.rightPanel {
-    display: flex;
-    flex: 1 1 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
