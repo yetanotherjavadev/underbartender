@@ -1,5 +1,7 @@
 import Recipe from "./Recipe";
 import data from "../mockdata/recipes.json";
+import liquidsData from "../mockdata/liquids.json";
+import { Liquid } from "./Liquid";
 
 export class Persistence {
 
@@ -11,5 +13,9 @@ export class Persistence {
 
 	static getAllRecipes(): Array<Recipe> {
 		return data;
+	}
+
+	static getAllLiquids(): Array<Liquid> {
+		return liquidsData;
 	}
 }
