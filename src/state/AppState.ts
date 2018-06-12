@@ -1,7 +1,7 @@
-// contains the whole state of the application
-// will most likely be divided into separate and independent parts each describing its own part of the state
+import { CocktailListState } from "./CocktailListState";
+import { TaggerState } from "./TaggerState";
 
-export class AppState {
-	public selectedCocktailId: number;
-	public filter: string;
+export interface AppState {
+	cocktailList: CocktailListState;
+	tagger: TaggerState;
 }

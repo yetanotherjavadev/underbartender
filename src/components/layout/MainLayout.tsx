@@ -5,6 +5,7 @@ import "./style/mainLayout.css";
 import Menu from "../mainmenu/Menu";
 import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
 import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
+import TagCloudContainer from "../tagcloud/TagCloudContainer";
 
 class MainLayout extends PureComponent {
 
@@ -22,7 +23,9 @@ class MainLayout extends PureComponent {
 					<div className="centralPanel">
 						<CocktailWidgetContainer/>
 					</div>
-					<div className="rightPanel"/>
+					<div className="rightPanel">
+						<TagCloudContainer/>
+					</div>
 				</div>
 			</div>
 		);

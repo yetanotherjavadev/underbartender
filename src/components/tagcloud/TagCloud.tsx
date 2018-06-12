@@ -1,16 +1,15 @@
 import * as React from "react";
 import { PureComponent } from "react";
-import "./style/cocktailList.css";
+import "./style/tagCloud.css";
 import TagModel from "./model/TagModel";
 
 export type TagCloudStateProps = {
-	tags: Array<TagModel>;
-	selectedTags: Array<TagModel>;
-	clickableTags: boolean;
+	availableTags: Array<TagModel>;
+	selectedTags: Array<TagModel>
 };
 
 export type TagCloudDispatchProps = {
-	onTagClick(clickedTagId: number): void;
+	onTagClick(clickedTag: TagModel): void;
 };
 
 export default class TagCloud extends PureComponent<TagCloudStateProps & TagCloudDispatchProps> {
@@ -19,17 +18,16 @@ export default class TagCloud extends PureComponent<TagCloudStateProps & TagClou
 	}
 
 	public render() {
-		const tags = this.props.tags.map((tag) => {
+		const tags = this.props.availableTags.map((tag) => {
 			return (
 				<div
 					className="tagWrapper"
 					key={tag.id}
 					onClick={() => {
-						this.props.onTagClick(tag.id);
+						this.props.onTagClick(tag);
 					}}
 				>
-					<div className="tag">{"#" + tag.id}</div>
-					{this.props.clickableTags && <div className="removeTagCross">X</div>}
+					<div className="tag">{tag.text}</div>
 				</div>
 			);
 		});

@@ -2,8 +2,8 @@ import { connect } from "react-redux";
 import CocktailsList, { CocktailsListDispatchProps, CocktailsListStateProps } from "./CocktailsList";
 import { Persistence } from "../../model/Persistence";
 import { Dispatch } from "redux";
+import { appstateActions } from "../../redux/actions/CocktailListAction";
 import { AppState } from "../../state/AppState";
-import { changeSelectedItem } from "../../redux/actions/appstate.actions";
 
 const mapStateToProps = (state: AppState): CocktailsListStateProps => ({
 	cocktails: Persistence.getAllRecipes().map((recipe) => recipe.id) // all cocktails are not yet in State
@@ -11,7 +11,7 @@ const mapStateToProps = (state: AppState): CocktailsListStateProps => ({
 
 const mapDispatchToProps = (dispatch: Dispatch): CocktailsListDispatchProps => ({
 	onClick: (id: number) => {
-		dispatch(changeSelectedItem(id));
+		dispatch(appstateActions.changeSelectedItem(id));
 	}
 });
 
