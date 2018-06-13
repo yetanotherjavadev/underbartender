@@ -1,11 +1,12 @@
 import * as React from "react";
 import { PureComponent } from "react";
-import "./style/tagCloud.css";
-import TagModel from "./model/TagModel";
+import "../style/simpleTagCloud.css";
+import TagModel from "../model/TagModel";
 
 export type TagCloudStateProps = {
-	availableTags: Array<TagModel>;
-	selectedTags: Array<TagModel>
+	availableTags: Array<TagModel>,
+	selectedTags: Array<TagModel>,
+	title: string
 };
 
 export type TagCloudDispatchProps = {
@@ -13,6 +14,7 @@ export type TagCloudDispatchProps = {
 };
 
 export default class TagCloud extends PureComponent<TagCloudStateProps & TagCloudDispatchProps> {
+
 	constructor(props: any) {
 		super(props);
 	}
@@ -32,8 +34,11 @@ export default class TagCloud extends PureComponent<TagCloudStateProps & TagClou
 			);
 		});
 		return (
-			<div className="tagContainer">
-				{tags}
+			<div>
+				<div className="titleContainer">{this.props.title}</div>
+				<div className="tagContainer">
+					{tags}
+				</div>
 			</div>
 		);
 	}

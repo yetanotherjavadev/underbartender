@@ -5,7 +5,8 @@ import "./style/mainLayout.css";
 import Menu from "../mainmenu/Menu";
 import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
 import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
-import TagCloudContainer from "../tagcloud/TagCloudContainer";
+import TagCloudContainer from "../tagcloud/CocktailComponentsTagCloud";
+import CountriesTagCloud from "../tagcloud/CountriesTagCloud";
 
 class MainLayout extends PureComponent {
 
@@ -24,7 +25,8 @@ class MainLayout extends PureComponent {
 						<CocktailWidgetContainer/>
 					</div>
 					<div className="rightPanel">
-						<TagCloudContainer/>
+						<TagCloudContainer title="Select Components"/>
+						<CountriesTagCloud title="Select Country"/>
 					</div>
 				</div>
 			</div>

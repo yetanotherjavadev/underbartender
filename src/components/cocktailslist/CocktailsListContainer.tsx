@@ -8,7 +8,7 @@ import { AppState } from "../../state/AppState";
 // TODO: use CocktailListState instead of AppState here
 const mapStateToProps = (state: AppState): CocktailsListStateProps => {
 	return {
-		cocktails: Persistence.getRecipesByFilterAndTags(state.cocktailList.filter, state.tagger.selectedTags).map((recipe) => {
+		cocktails: Persistence.getRecipesByFilterAndTags(state.cocktailListState.filter, state.componentsTagCloudState.selectedTags).map((recipe) => {
 			return recipe.id;
 		})
 	};

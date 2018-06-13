@@ -3,9 +3,11 @@ import { cocktailListReducer } from "../reducers/CocktailListReducer";
 import { taggerReducer } from "../reducers/TaggerReducer";
 import { AppState } from "../../state/AppState";
 
+// TODO: think how to avoid having keys name like "*state" but containing reducers
 const reducers = {
-	cocktailList: cocktailListReducer,
-	tagger: taggerReducer,
+	cocktailListState: cocktailListReducer,
+	componentsTagCloudState: taggerReducer,
+	filterState: filterReducer,
 };
 
 export const mainStore = createStore(combineReducers(reducers)) as Store<AppState, AnyAction>;

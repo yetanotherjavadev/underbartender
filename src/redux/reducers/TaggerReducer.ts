@@ -4,7 +4,7 @@ import { Persistence } from "../../model/Persistence";
 import TagModel from "../../components/tagcloud/model/TagModel";
 import { TaggerAction, TaggerActionType } from "../actions/TaggerAction";
 
-// initial state of tagger
+// initial state of componentsTagCloudState
 const initialState: TaggerState = {
 	selectedTags: [],
 	availableTags: Persistence.getAllLiquids().map((liquid) => (new TagModel(liquid.name, liquid.id)))

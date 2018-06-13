@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Red Wine Glass",
+    "description": "Glassware for red wine should have a larger, rounder bowl in order to swirl the wine easily and help aerate it. A long stem will also keep the hand away from the drink in order to prevent it becoming too warm.",
+    "volume": 400,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 2,
+    "name": "White Wine Glass",
+    "description": "White wine glasses will have a smaller mouth area, and therefore a smaller surface area to aerate, so that wine does not oxidize too fast. This is in order to retain the lighter, more delicate notes that white wines will generally have",
+    "volume": 300,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 3,
+    "name": "Flute Glass",
+    "description": "Sparkling wine needs even less surface area, as this will help preserve the bubbles and stop it from going flat too quickly. Hence, the flute glass, with its tall, thin bowl and small mouth. Also used for Champagne cocktails.",
+    "volume": 200,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 4,
+    "name": "Cocktail Glass",
+    "description": "The classic, traditional cocktail glass is an inverted cone bowl, which can come in a variety of sizes, usually around 3 to 6 ounces. It is used to serve cocktails without ice, or ‘up.’ Its shape evolved from the fact that all traditional cocktails would have interesting aromas, and the large mouth allows the nose of the drinker to get close to the surface of the drink and fully enjoy its scent and taste.",
+    "volume": 150,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 5,
+    "name": "Highball Glass",
+    "description": "A highball glass is a glass tumbler used to serve ‘tall’ cocktails and other mixed drinks that contain a large proportion of a non-alcoholic mixer, and are poured over ice. It is often used interchangeably with the Collins Glass, although the highball glass is shorter and wider in shape.",
+    "volume": 250,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 6,
+    "name": "Lowball Glass",
+    "description": "The lowball glass, Old Fashioned glass, or rocks glass, are all names for a short tumbler with a solid base which holds around 6 to 8 ounces of liquid. A solid base aids with drinks which require ‘muddled’ ingredients. These low glasses can also be used for serving a neat pour of liquor.",
+    "volume": 150,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 7,
+    "name": "Irish Coffee Glass",
+    "description": "Hot cocktails such as an Irish Coffee or a Hot Toddy are best served in an Irish Coffee glass, which is made with heat-resistant glass and has a handle attached, to enable you to hold the drink comfortably.",
+    "volume": 150,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 8,
+    "name": "Hurricane Glass",
+    "description": "The Hurricane cocktail, developed by New Orleans tavern owner Pat O’Brien in the 1940s, was first poured into hurricane lamp-shaped glasses; hence the name. The drink and the name stuck, and it has been a mainstay in the French Quarter ever since.",
+    "volume": 150,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 9,
+    "name": "Martini Glass",
+    "description": "Martinis were originally served in cocktail glasses (above), but the drink evolved into a variety of vodka-based ‘tinis’ through the ’90s, and the serving sizes grew. Martini glasses differ from the traditional cocktail glass by generally having a larger bowl and being fully conical at the bottom.",
+    "volume": 150,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 10,
+    "name": "Margarita Glass",
+    "description": "Another specialty drink with its own unique glassware, Margaritas were traditionally served in a margarita glass; a “stepped-diameter variant of a cocktail glass.” These may be rarely seen in general bars and homes, as it has become the norm to serve margaritas in many other vessels, from pint glasses to double Old Fashioned glasses.",
+    "volume": 150,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 11,
+    "name": "The Glencairn Whisky Glass",
+    "description": "This specialty piece was developed by Glencairn Crystal Ltd. with the purpose of getting the maximum flavors when drinking whisky. It derives from traditional nosing glasses used by master blenders, borrowing the wide bowl to show off the color and help expose the aromas, but instead uses a tapered mouth to allow easier drinking.",
+    "volume": 150,
+    "pictureId": 0,
+    "categoryId": 0
+  },
+  {
+    "id": 12,
+    "name": "Snifter Glass",
+    "description": "The snifter glass has a very short stem which is supposed to be cradled in the hand, helping warm the drink it contains. The large bowl allows the drink to be swirled, and a shorter mouth traps aromas and allows the drinker to enjoy a more prominent smell as they sip. Mostly used for brown spirits, such as brandy and whisky.",
+    "volume": 150,
+    "pictureId": 0,
+    "categoryId": 0
+  }
+]

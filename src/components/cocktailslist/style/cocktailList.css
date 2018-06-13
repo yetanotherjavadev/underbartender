@@ -5,17 +5,15 @@
 }
 
 .list-group-item {
-    background: lightblue;
-    font-size: 12px;
+    background: white;
+    font-size: 13px;
     min-height: 30px;
-    border: 1px solid darkgray;
+    border: 1px solid lightgray;
+    border-radius: 20px;
     outline: none;
-}
-
-.list-group-item:not(:first-child) {
-    border-top: none;
+    margin: 3px 0 3px 0;
 }
 
 .list-group-item:hover {
-    background: #a9ccd8;
+    background: lightgray;
 }

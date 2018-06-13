@@ -19,11 +19,5 @@ export const taggerActions = {
 		payload: {
 			clickedTag: tag
 		}
-	}),
-	updateAvailableTags: (tags: Array<TagModel>) => ({
-		type: TaggerActionType.CHANGE_AVAILABLE_TAG_SET,
-		payload: {
-			availableTags: tags
-		}
 	})
 };

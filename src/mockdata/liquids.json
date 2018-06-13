@@ -28,5 +28,15 @@
     "calories": 140,
     "countryOfOriginId": 2,
     "category": "DISTILLATE"
+  },
+  {
+    "id": 4,
+    "name": "Irish Whiskey",
+    "strength": 40,
+    "density": 0.94,
+    "sugar": 0.0,
+    "calories": 140,
+    "countryOfOriginId": 4,
+    "category": "DISTILLATE"
   }
 ]

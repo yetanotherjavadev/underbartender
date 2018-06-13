@@ -1,8 +1,12 @@
 import Recipe from "./Recipe";
 import data from "../mockdata/recipes.json";
+import glassware from "../mockdata/glassware.json";
+import countries from "../mockdata/countries.json";
 import liquidsData from "../mockdata/liquids.json";
 import { Liquid } from "./Liquid";
 import TagModel from "../components/tagcloud/model/TagModel";
+import { Country } from "./Country";
+import { GlassType } from "./GlassType";
 
 export class Persistence {
 
@@ -41,6 +45,14 @@ export class Persistence {
 
 	static getAllLiquids(): Array<Liquid> {
 		return liquidsData;
+	}
+
+	static getAllCountries(): Array<Country> {
+		return countries;
+	}
+
+	static getAllGlassTypes(): Array<GlassType> {
+		return glassware;
 	}
 
 	private static filterPredicate(input: string, filter: string): boolean {

@@ -10,13 +10,14 @@
     background-color: #3760ea;
     display: flex;
     align-content: center;
-    flex: 0 0 100px;
+    flex: 1 1 70px;
     height: 32px;
     border-radius: 30px;
     margin: 5px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    max-width: 120px;
 }
 
 .tagWrapper.selected {
@@ -39,9 +40,15 @@
     color: white;
     flex: 0 0 auto;
     display: flex;
+    text-overflow: ellipsis;
 }
 
 .removeTagCross {
     font-size: 20px;
     font-weight: bold;
+}
+
+.titleContainer {
+    font-size: 16px;
+    color: #656565;
 }
