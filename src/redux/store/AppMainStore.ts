@@ -1,6 +1,6 @@
 import { AnyAction, combineReducers, createStore, Store } from "redux";
-import { cocktailListReducer } from "../reducers/cocktailList.reducer";
-import { taggerReducer } from "../reducers/tagger.reducer";
+import { cocktailListReducer } from "../reducers/CocktailListReducer";
+import { taggerReducer } from "../reducers/TaggerReducer";
 import { AppState } from "../../state/AppState";
 
 const reducers = {

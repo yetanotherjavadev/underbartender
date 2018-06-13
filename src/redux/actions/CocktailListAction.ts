@@ -12,7 +12,7 @@ export interface CocktailListActionPayload {
 
 export interface CocktailListAction extends GenericAction<CocktailListActionPayload, CocktailListActionType> {}
 
-export const appstateActions = {
+export const cocktailListActions = {
 	changeSelectedItem: (selectedItem: number) => ({
 		type: CocktailListActionType.CHANGE_SELECTED_ITEM,
 		payload: {selectedCocktailId: selectedItem}

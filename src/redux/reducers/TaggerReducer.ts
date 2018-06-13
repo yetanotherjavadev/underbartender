@@ -15,7 +15,7 @@ export const changeSelectedTagsReducer = (state: Array<TagModel> = initialState.
 		window.console.log("changed selected tag set reducer called: " + action.payload.clickedTag.text);
 
 		let newState = [...state];
-		if (state.indexOf(action.payload.clickedTag) !== -1) {
+		if (!action.payload.clickedTag.isSelected) {
 			newState = newState.filter(item => item !== action.payload.clickedTag);
 		} else {
 			newState.push(action.payload.clickedTag);

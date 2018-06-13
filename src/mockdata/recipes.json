@@ -150,5 +150,65 @@
     ],
     "text": "Mix in large pitcher with ice and serve immediately.",
     "strength": 12
+  },
+  {
+    "id": 5,
+    "name": "Pure Water",
+    "description": "As pure as it can be",
+    "components": [
+      {
+        "name": "Water",
+        "amount": "200 ml"
+      }
+    ],
+    "text": "Pour and drink immediately",
+    "strength": 0
+  },
+  {
+    "id": 6,
+    "name": "Pure Cola",
+    "description": "Black Elixir solution",
+    "components": [
+      {
+        "name": "Cola",
+        "amount": "200 ml"
+      },
+      {
+        "name": "Ice",
+        "amount": "5 cubes"
+      }
+    ],
+    "text": "Be careful to handle pressure difference when opening the bottle",
+    "strength": 0
+  },
+  {
+    "id": 7,
+    "name": "Vodka Shot",
+    "description": "Sometimes even the greatest need a rest",
+    "components": [
+      {
+        "name": "Vodka",
+        "amount": "50 ml"
+      }
+    ],
+    "text": "5x and the life turns colors on",
+    "strength": 40
+  },
+  {
+    "id": 8,
+    "name": "Vodka and Cola",
+    "description": "test test test",
+    "components": [
+      {
+        "name": "Vodka",
+        "amount": "50 ml"
+      },
+      {
+        "name": "Cola",
+        "amount": "150 ml"
+      }
+    ],
+    "text": "Classics for those who can't afford Cognac",
+    "strength": 10
   }
 ]

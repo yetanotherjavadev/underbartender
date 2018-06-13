@@ -1,6 +1,6 @@
 .topPanel {
     display: flex;
-    flex: 0 1 40px;
+    flex: 0 1 70px;
     flex-direction: column;
 }
 
@@ -17,7 +17,7 @@
 .mainLayout {
     display: flex;
     flex: 1 1 auto;
-    background: lightgray;
+    background: white;
     flex-direction: column;
     height: 100%;
 }

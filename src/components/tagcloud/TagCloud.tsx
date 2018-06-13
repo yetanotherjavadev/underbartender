@@ -21,7 +21,7 @@ export default class TagCloud extends PureComponent<TagCloudStateProps & TagClou
 		const tags = this.props.availableTags.map((tag) => {
 			return (
 				<div
-					className="tagWrapper"
+					className={"tagWrapper " + (tag.isSelected ? "selected" : "")}
 					key={tag.id}
 					onClick={() => {
 						this.props.onTagClick(tag);
