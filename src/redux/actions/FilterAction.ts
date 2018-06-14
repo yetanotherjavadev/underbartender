@@ -13,7 +13,7 @@ export interface FilterActionPayload {
 export interface FilterAction extends GenericAction<FilterActionPayload, FilterActionType> {}
 
 export const filterActions = {
-	filterChanged: (changedFilters: Array<FilterModel>) => ({
+	filtersChanged: (changedFilters: Array<FilterModel>) => ({
 		type: FilterActionType.FILTERS_CHANGED,
 		payload: {
 			changedFilters: changedFilters

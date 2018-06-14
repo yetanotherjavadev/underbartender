@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "l1",
     "name": "Water",
     "strength": 0,
     "density": 1.0,
@@ -10,7 +10,7 @@
     "category": "NA"
   },
   {
-    "id": 2,
+    "id": "l2",
     "name": "Cola",
     "strength": 0,
     "density": 1.1,
@@ -20,7 +20,7 @@
     "category": "CARBONATED_WATER"
   },
   {
-    "id": 3,
+    "id": "l3",
     "name": "Vodka",
     "strength": 40,
     "density": 0.94,
@@ -30,7 +30,7 @@
     "category": "DISTILLATE"
   },
   {
-    "id": 4,
+    "id": "l4",
     "name": "Irish Whiskey",
     "strength": 40,
     "density": 0.94,

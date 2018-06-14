@@ -34,7 +34,7 @@
       }
     ],
     "text": "Rinse coupe, stir, strain, up.",
-    "countryOfOriginId": 1,
+    "countryOfOriginId": "c1",
     "strength": 20
   },
   {
@@ -72,7 +72,7 @@
       }
     ],
     "text": "Lemon zest, Stir, Rocks, Lowball",
-    "countryOfOriginId": 1,
+    "countryOfOriginId": "c1",
     "strength": 15
   },
   {
@@ -106,7 +106,7 @@
       }
     ],
     "text": "In a pint glass muddle sugar and bitters. Add remaining ingredients, ice then shake and strain into a chilled cocktail glass. Garnish with a lemon twist.",
-    "countryOfOriginId": 1,
+    "countryOfOriginId": "c1",
     "strength": 18
   },
   {
@@ -152,7 +152,7 @@
       }
     ],
     "text": "Mix in large pitcher with ice and serve immediately.",
-    "countryOfOriginId": 1,
+    "countryOfOriginId": "c1",
     "strength": 12
   },
   {
@@ -166,7 +166,7 @@
       }
     ],
     "text": "Pour and drink immediately",
-    "countryOfOriginId": 0,
+    "countryOfOriginId": "c0",
     "strength": 0
   },
   {
@@ -197,7 +197,7 @@
       }
     ],
     "text": "5x and the life turns colors on",
-    "countryOfOriginId": 2,
+    "countryOfOriginId": "c2",
     "strength": 40
   },
   {
@@ -215,7 +215,7 @@
       }
     ],
     "text": "Classics for those who can't afford Cognac",
-    "countryOfOriginId": 1,
+    "countryOfOriginId": "c4",
     "strength": 10
   }
 ]

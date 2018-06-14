@@ -4,7 +4,7 @@ export default class Recipe {
 	description: string;
 	components: Array<Component>;
 	text: string;
-	countryOfOriginId: number;
+	countryOfOriginId: string;
 	strength: number; // approximate strength
 }
 

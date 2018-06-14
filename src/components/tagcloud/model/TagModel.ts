@@ -1,11 +1,11 @@
+import FilterModel from "../../../model/FilterModel";
+
 export default class TagModel {
-	text: string;
-	id: number;
+	filter: FilterModel;
 	isSelected: boolean;
 
-	constructor(text: string, id: number) {
-		this.text = text;
-		this.id = id;
+	constructor(filter: FilterModel) {
+		this.filter = filter;
 		this.isSelected = false;
 	}
 }

@@ -1,5 +1,5 @@
 export class Liquid {
-	id: number;
+	id: string;
 	name: string; // TODO: add description
 	strength: number; // alc by vol in %
 	density: number; // g/ml

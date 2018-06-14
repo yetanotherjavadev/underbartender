@@ -7,7 +7,8 @@
 }
 
 .tagWrapper {
-    background-color: #3760ea;
+    /*background-color: #3760ea;*/
+    background-color: white;
     display: flex;
     align-content: center;
     flex: 1 1 70px;
@@ -18,29 +19,34 @@
     justify-content: center;
     cursor: pointer;
     max-width: 120px;
+    border: 1px solid lightgray;
 }
 
 .tagWrapper.selected {
-    background-color: darkred;
+    /*background-color: darkred;*/
+    background-color: #b3d8e5;
 }
 
 .tagWrapper.selected:hover {
-    background-color: #740000;
+    /*background-color: #740000;*/
+    background-color: #a9ccd8;
 }
 
-.tagWrapper:hover {
-    background-color: #3559c5;
-}
+/*.tagWrapper:hover {*/
+    /*background-color: #3559c5;*/
+/*}*/
 
 .tag {
     border-radius: 10px;
     max-height: 20px;
     font-size: 14px;
     font-family: "Helvetica";
-    color: white;
+    /*color: white;*/
+    color: grey;
     flex: 0 0 auto;
     display: flex;
     text-overflow: ellipsis;
+    user-select: none; /*todo: remove*/
 }
 
 .removeTagCross {

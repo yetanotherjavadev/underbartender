@@ -17,7 +17,7 @@ export const cocktailListActions = {
 		type: CocktailListActionType.CHANGE_SELECTED_ITEM,
 		payload: {selectedCocktailId: selectedItem}
 	}),
-	changeFilter: (filter: string) => ({
+	changeFilterString: (filter: string) => ({
 		type: CocktailListActionType.CHANGE_FILTER,
 		payload: {filter: filter}
 	})

@@ -4,8 +4,7 @@ import "../style/simpleTagCloud.css";
 import TagModel from "../model/TagModel";
 
 export type TagCloudStateProps = {
-	availableTags: Array<TagModel>,
-	selectedTags: Array<TagModel>,
+	tags: Array<TagModel>,
 	title: string
 };
 
@@ -20,16 +19,16 @@ export default class TagCloud extends PureComponent<TagCloudStateProps & TagClou
 	}
 
 	public render() {
-		const tags = this.props.availableTags.map((tag) => {
+		const tags = this.props.tags.map((tag) => {
 			return (
 				<div
 					className={"tagWrapper " + (tag.isSelected ? "selected" : "")}
-					key={tag.id}
+					key={tag.filter.id}
 					onClick={() => {
 						this.props.onTagClick(tag);
 					}}
 				>
-					<div className="tag">{tag.text}</div>
+					<div className="tag">{tag.filter.text}</div>
 				</div>
 			);
 		});
