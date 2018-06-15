@@ -13,7 +13,7 @@ export default class SearchBox extends PureComponent<any> {
 	public render() {
 		return (
 			<div className="main">
-				<input className="label"/>
+				<input type="search" className="searchInput"/>
 			</div>
 		);
 	}

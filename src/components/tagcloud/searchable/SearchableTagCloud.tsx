@@ -1,18 +1,19 @@
 import * as React from "react";
 import { PureComponent } from "react";
-import "./style/simpleTagCloud.css";
+import "./style/searchable.css";
 import TagModel from "../model/TagModel";
+import SearchBox from "../../searchbox/SearchBox";
 
-export type SimpleTagCloudStateProps = {
+export type SearchableTagCloudStateProps = {
 	tags: Array<TagModel>,
 	title: string
 };
 
-export type SimpleTagCloudDispatchProps = {
+export type SearchableTagCloudDispatchProps = {
 	onTagClick(clickedTag: TagModel): void;
 };
 
-export default class SimpleTagCloud extends PureComponent<SimpleTagCloudStateProps & SimpleTagCloudDispatchProps> {
+export default class SearchableTagCloud extends PureComponent<SearchableTagCloudStateProps & SearchableTagCloudDispatchProps> {
 
 	constructor(props: any) {
 		super(props);
@@ -35,6 +36,7 @@ export default class SimpleTagCloud extends PureComponent<SimpleTagCloudStatePro
 		return (
 			<div>
 				<div className="titleContainer">{this.props.title}</div>
+				<SearchBox/>
 				<div className="tagContainer">
 					{tags}
 				</div>

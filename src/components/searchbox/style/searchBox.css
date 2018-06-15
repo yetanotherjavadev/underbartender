@@ -5,7 +5,7 @@
     flex: 0 1 50px;
 }
 
-.label {
+.searchInput {
     background: white;
     border: 1px solid lightgray;
     font-size: 11px;
