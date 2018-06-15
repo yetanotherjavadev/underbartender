@@ -33,6 +33,10 @@
     padding: 20px;
 }
 
+.leftPanel {
+    justify-content: flex-start;
+}
+
 .rightPanel {
     flex: 1 1 50%;
 }
