@@ -12,7 +12,7 @@ export type TagCloudDispatchProps = {
 	onTagClick(clickedTag: TagModel): void;
 };
 
-export default class TagCloud extends PureComponent<TagCloudStateProps & TagCloudDispatchProps> {
+export default class SimpleTagCloud extends PureComponent<TagCloudStateProps & TagCloudDispatchProps> {
 
 	constructor(props: any) {
 		super(props);

@@ -1,0 +1,16 @@
+.footerPanel {
+    display: flex;
+    flex: 1 1 auto;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.menuBar {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.menuItem {
+    display: flex;
+    flex: 1 0 150px;
+}

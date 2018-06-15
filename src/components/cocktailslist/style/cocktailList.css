@@ -1,7 +1,8 @@
 .cocktailsList {
     display: flex;
     flex: 0 0 300px;
-    border: 1px solid darkgray;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .list-group-item {
@@ -16,4 +17,9 @@
 
 .list-group-item:hover {
     background: lightgray;
+}
+
+.noDataWidget {
+    color: lightgray;
+    font-size: 16px;
 }

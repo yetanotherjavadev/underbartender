@@ -31,10 +31,16 @@ export default class CocktailsList extends PureComponent<CocktailsListStateProps
 				</ListGroupItem>
 			);
 		});
-		return (
-			<ListGroup componentClass="ul" className="cocktailWidget">
-				{ingredients}
-			</ListGroup>
-		);
+		if (ingredients.length !== 0) {
+			return (
+				<ListGroup componentClass="ul" className="cocktailsList">
+					{ingredients}
+				</ListGroup>
+			);
+		} else {
+			return (
+				<div className="noDataWidget">No data found for selected filter set</div>
+			);
+		}
 	}
 }
