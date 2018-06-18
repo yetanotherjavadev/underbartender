@@ -27,18 +27,18 @@
 
 .leftPanel, .rightPanel {
     display: flex;
-    flex: 1 1 25%;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .leftPanel {
     justify-content: flex-start;
+    flex: 1 1 50%;
 }
 
 .rightPanel {
-    flex: 1 1 50%;
+    flex: 1 1 25%;
 }
 
 .centralPanel {

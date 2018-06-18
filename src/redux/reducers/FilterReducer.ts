@@ -10,7 +10,7 @@ const initialState: FilterState = {
 
 export const appliedFiltersReducer = (state: Array<FilterModel> = initialState.appliedFilters, action: FilterAction): Array<FilterModel> => {
 	if (action.type === FilterActionType.FILTERS_CHANGED) {
-		window.console.log("filter has been changed with the following FilterModel pieces: ");
+		window.console.log("Filters have been changed with the following FilterModel pieces: ");
 		action.payload.changedFilters.forEach((filter) => window.console.log("filter: " + filter));
 		// merging changed filters towards all filters
 		// if (action.payload.changedFilters)

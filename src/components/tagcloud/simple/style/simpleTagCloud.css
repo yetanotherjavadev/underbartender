@@ -11,8 +11,8 @@
     background-color: white;
     display: flex;
     align-content: center;
-    flex: 1 1 70px;
-    height: 32px;
+    flex: 0 0 100px;
+    height: 26px;
     border-radius: 30px;
     margin: 5px;
     align-items: center;
@@ -39,11 +39,13 @@
 .tag {
     border-radius: 10px;
     max-height: 20px;
-    font-size: 14px;
-    font-family: "Helvetica";
+    font-size: 13px;
+    /*font-family: "Helvetica";*/
     /*color: white;*/
-    color: grey;
-    flex: 0 0 auto;
+    justify-content: center;
+    /*color: grey;*/
+    color: black;
+    flex: 1 1 auto;
     display: flex;
     text-overflow: ellipsis;
     user-select: none; /*todo: remove*/
