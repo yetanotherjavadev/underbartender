@@ -4,11 +4,11 @@ import glassware from "../mockdata/glassware.json";
 import countries from "../mockdata/countries.json";
 import liquidsData from "../mockdata/liquids.json";
 import { Liquid } from "./Liquid";
-import TagModel from "../components/tagcloud/model/TagModel";
 import { Country } from "./Country";
 import { GlassType } from "./GlassType";
 import FilterState from "../state/filters/FilterState";
 import { FilterType } from "./FilterType";
+import FilterModel from "./FilterModel";
 
 export class Persistence {
 
@@ -18,31 +18,16 @@ export class Persistence {
 		return Persistence.recipes.find((recipe) => recipe.id === id) || Persistence.recipes[0]; // defaults to first cocktail
 	}
 
-	static getRecipesByFilterAndTags(filter: string, selectedTags: Array<TagModel>): Array<Recipe> {
-		return Persistence.recipes.filter((recipe) => {
-			if (selectedTags.length === 0) {
-				return Persistence.filterPredicate(recipe.name, filter);
-			}
-			for (let aComponent of recipe.components) {
-				for (let tag of selectedTags) { // as it usually implemented in classic filter model OR is used here
-					if (tag.filter.text === aComponent.name) {
-						return Persistence.filterPredicate(recipe.name, filter);
-					}
-				}
-			}
-			return false;
-		});
-	}
-
 	public static getFilterOfAKind(filterState: FilterState, filterType: FilterType) {
-		return filterState.appliedFilters.filter((aFilter) => aFilter.filterType === filterType);
+		return filterState.appliedFilters.filter((aFilter) => aFilter.filterType === filterType && aFilter.isSelected);
 	}
 
 	static getRecipesWithFiltering(filterState: FilterState): Array<Recipe> {
-		if (filterState.appliedFilters.length === 0) {
+		const activeFilters = filterState.appliedFilters.filter((filter: FilterModel) => filter.isSelected);
+		if (activeFilters.length === 9 || activeFilters.length === 0) {
 			return Persistence.recipes;
 		}
-
+		// TODO refactor
 		let countryFilters = Persistence.getFilterOfAKind(filterState, FilterType.COUNTRY);
 		let componentFilters = Persistence.getFilterOfAKind(filterState, FilterType.COCKTAIL_COMPONENT);
 
@@ -51,11 +36,12 @@ export class Persistence {
 		// first filter out by country:
 		if (countryFilters.length !== 0) {
 			filtered = Persistence.recipes.filter((recipe) => {
-				if (countryFilters.length !== 0) {
-					for (let country of countryFilters) {
-						if (Persistence.getCountryById(recipe.countryOfOriginId).id === country.id) {
-							return true;
-						}
+				for (let country of countryFilters) {
+					if (!country.isSelected) {
+						continue;
+					}
+					if (Persistence.getCountryById(recipe.countryOfOriginId).id === country.id) {
+						return true;
 					}
 				}
 				return false;
@@ -81,7 +67,7 @@ export class Persistence {
 
 	static getCountryById(id: string): Country {
 		let result = this.getAllCountries().filter((country) => country.id === id)[0];
-		return result || countries[0]; // defaults to "c0" = Internation
+		return result || countries[0]; // defaults to "c0" = International
 	}
 
 	static getAllRecipes(): Array<Recipe> {
@@ -96,11 +82,12 @@ export class Persistence {
 		return countries;
 	}
 
-	static getAllGlassTypes(): Array<GlassType> {
-		return glassware;
+	static getAllFilters(): Array<FilterModel> {
+		return countries.map((country: Country) => new FilterModel(country.id, country.name, FilterType.COUNTRY)).concat(
+			liquidsData.map((liquid: Liquid) => new FilterModel(liquid.id, liquid.name, FilterType.COCKTAIL_COMPONENT)));
 	}
 
-	private static filterPredicate(input: string, filter: string): boolean {
-		return input.indexOf(filter) !== -1;
+	static getAllGlassTypes(): Array<GlassType> {
+		return glassware;
 	}
 }

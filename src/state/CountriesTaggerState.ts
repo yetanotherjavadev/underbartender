@@ -1,5 +1,5 @@
-import TagModel from "../components/tagcloud/model/TagModel";
+import FilterModel from "../model/FilterModel";
 
 export class CountriesTaggerState {
-	public tags: Array<TagModel>;
+	tags: Array<FilterModel>;
 }

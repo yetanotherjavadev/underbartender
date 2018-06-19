@@ -15,6 +15,7 @@ const reducers = {
 
 export const mainStore = createStore(combineReducers(reducers)) as Store<AppState, AnyAction>;
 
+// TODO: add DevTools to be able to debug easily
 // export const configureStore = (rootReducer: Reducer): Store<AppState, AnyAction> => {
 // 	return createStore(
 // 		rootReducer,

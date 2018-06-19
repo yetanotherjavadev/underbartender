@@ -5,9 +5,9 @@ import "./style/mainLayout.css";
 import Menu from "../mainmenu/Menu";
 import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
 import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
-import TagCloudContainer from "../tagcloud/CocktailComponentsTagCloud";
-import CountriesTagCloud from "../tagcloud/CountriesTagCloud";
 import FooterWidget from "../footer/FooterWidget";
+import GenericTagCloud from "../tagcloud/GenericTagCloud";
+import { FilterType } from "../../model/FilterType";
 
 class MainLayout extends PureComponent {
 
@@ -20,8 +20,9 @@ class MainLayout extends PureComponent {
 				</div>
 				<div className="workingArea">
 					<div className="leftPanel">
-						<TagCloudContainer title="Select Components"/>
-						<CountriesTagCloud title="Select Country"/>
+						<GenericTagCloud title="Select Components" filterType={FilterType.COCKTAIL_COMPONENT}/>
+						<GenericTagCloud title="Select Country" filterType={FilterType.COUNTRY}/>
+						<GenericTagCloud title="Select Strength" filterType={FilterType.STRENGTH}/>
 					</div>
 					<div className="centralPanel">
 						<CocktailsListContainer/>

@@ -1,15 +1,15 @@
 import * as React from "react";
 import { PureComponent } from "react";
 import "./style/simpleTagCloud.css";
-import TagModel from "../model/TagModel";
+import FilterModel from "../../../model/FilterModel";
 
 export type SimpleTagCloudStateProps = {
-	tags: Array<TagModel>,
-	title: string
+	tags: Array<FilterModel>,
+	title: string,
 };
 
 export type SimpleTagCloudDispatchProps = {
-	onTagClick(clickedTag: TagModel): void;
+	onTagClick(clickedTag: FilterModel): void;
 };
 
 export default class SimpleTagCloud extends PureComponent<SimpleTagCloudStateProps & SimpleTagCloudDispatchProps> {
@@ -19,16 +19,16 @@ export default class SimpleTagCloud extends PureComponent<SimpleTagCloudStatePro
 	}
 
 	public render() {
-		const tags = this.props.tags.map((tag) => {
+		const tags = this.props.tags.map((filter: FilterModel) => {
 			return (
 				<div
-					className={"tagWrapper " + (tag.isSelected ? "selected" : "")}
-					key={tag.filter.id}
+					className={"tagWrapper " + (filter.isSelected ? "selected" : "")}
+					key={filter.id}
 					onClick={() => {
-						this.props.onTagClick(tag);
+						this.props.onTagClick(filter);
 					}}
 				>
-					<div className="tag">{tag.filter.text}</div>
+					<div className="tag">{filter.text}</div>
 				</div>
 			);
 		});
