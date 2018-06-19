@@ -10,7 +10,7 @@ export default class BottomMenuBar extends PureComponent {
 	}
 
 	render() {
-		const menuItems = ["News", "About", "Support", "FAQ", "Sitemap"];
+		const menuItems = ["MenuItem1", "MenuItem2", "MenuItem3", "MenuItem4", "MenuItem5"];
 
 		const listItems = menuItems.map((item) => (<li key={item} className="item">{item}</li>));
 

@@ -7,6 +7,7 @@ import { Persistence } from "../../model/Persistence";
 
 export type CocktailsListStateProps = {
 	cocktails: Array<number>;
+	selectedCocktailId: number;
 };
 
 export type CocktailsListDispatchProps = {
@@ -18,11 +19,16 @@ export default class CocktailsList extends PureComponent<CocktailsListStateProps
 		super(props);
 	}
 
+	itemActive(id: number) {
+		return id === this.props.selectedCocktailId;
+	}
+
 	public render() {
-		const ingredients = this.props.cocktails.map((cocktailId) => {
+		const cocktails = this.props.cocktails.map((cocktailId) => {
 			const cocktail = Persistence.getRecipeById(cocktailId);
 			return (
 				<ListGroupItem
+					active={this.itemActive(cocktail.id)}
 					key={cocktailId}
 					onClick={() => {
 						this.props.onClick(cocktail.id);
@@ -31,10 +37,10 @@ export default class CocktailsList extends PureComponent<CocktailsListStateProps
 				</ListGroupItem>
 			);
 		});
-		if (ingredients.length !== 0) {
+		if (cocktails.length !== 0) {
 			return (
 				<ListGroup componentClass="ul" className="cocktailsList">
-					{ingredients}
+					{cocktails}
 				</ListGroup>
 			);
 		} else {

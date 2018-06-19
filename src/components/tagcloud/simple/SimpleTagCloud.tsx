@@ -33,7 +33,7 @@ export default class SimpleTagCloud extends PureComponent<SimpleTagCloudStatePro
 			);
 		});
 		return (
-			<div>
+			<div className="simpleTagCloud">
 				<div className="titleContainer">{this.props.title}</div>
 				<div className="tagContainer">
 					{tags}
