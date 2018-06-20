@@ -6,9 +6,11 @@ import Menu from "../mainmenu/Menu";
 import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
 import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
 import FooterWidget from "../footer/FooterWidget";
-import GenericTagCloud from "../tagcloud/GenericTagCloud";
+import { default as SimpleTagCloudComponent } from "../tagcloud/simple/SimpleTagCloudComponent";
 import { FilterType } from "../../model/FilterType";
+import SearchableTagCloudComponent from "../tagcloud/searchable/SearchableTagCloudComponent";
 
+// TODO: add all filter types into filters area
 class MainLayout extends PureComponent {
 
 	public render() {
@@ -21,11 +23,11 @@ class MainLayout extends PureComponent {
 				<div className="workingArea">
 					<div className="leftPanel">
 						<div className="filterArea">
-							<GenericTagCloud title="Components" filterType={FilterType.COCKTAIL_COMPONENT}/>
-							<GenericTagCloud title="Number of components" filterType={FilterType.NUMBER_OF_COMPONENTS}/>
-							<GenericTagCloud title="Country of Origin" filterType={FilterType.COUNTRY_OF_ORIGIN}/>
+							<SimpleTagCloudComponent title="Components" filterType={FilterType.COCKTAIL_COMPONENT}/>
+							<SimpleTagCloudComponent title="Number of components" filterType={FilterType.NUMBER_OF_COMPONENTS}/>
+							<SearchableTagCloudComponent maxItemsVisible={5} title="Country of Origin" filterType={FilterType.COUNTRY_OF_ORIGIN}/>
 							{/*<GenericTagCloud title="Cocktail Type" filterType={FilterType.COCKTAIL_TYPE}/>*/}
-							<GenericTagCloud title="Strength" filterType={FilterType.STRENGTH_GROUP}/>
+							<SimpleTagCloudComponent title="Strength" filterType={FilterType.STRENGTH_GROUP}/>
 							{/*<GenericTagCloud title="Quick Filter" filterType={FilterType.QUICK_FILTER}/>*/}
 						</div>
 					</div>

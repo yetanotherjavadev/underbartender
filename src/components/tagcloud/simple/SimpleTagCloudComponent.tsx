@@ -1,10 +1,10 @@
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
-import TagCloud, { SimpleTagCloudDispatchProps, SimpleTagCloudStateProps } from "./simple/SimpleTagCloud";
-import { AppState } from "../../state/AppState";
-import { FilterType } from "../../model/FilterType";
-import FilterModel from "../../model/FilterModel";
-import { filterActions } from "../../redux/actions/FilterAction";
+import SimpleTagCloud, { SimpleTagCloudDispatchProps, SimpleTagCloudStateProps } from "./SimpleTagCloud";
+import { AppState } from "../../../state/AppState";
+import { FilterType } from "../../../model/FilterType";
+import FilterModel from "../../../model/FilterModel";
+import { filterActions } from "../../../redux/actions/FilterAction";
 
 interface Props {
 	title: string;
@@ -25,9 +25,9 @@ const mapDispatchToProps = (dispatch: Dispatch): SimpleTagCloudDispatchProps => 
 	}
 });
 
-const CocktailComponentsTagCloud = connect(
+const SimpleTagCloudComponent = connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(TagCloud);
+)(SimpleTagCloud);
 
-export default CocktailComponentsTagCloud;
+export default SimpleTagCloudComponent;

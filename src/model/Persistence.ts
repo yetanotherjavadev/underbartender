@@ -37,6 +37,7 @@ export class Persistence {
 		}
 	}
 
+	// TODO: refactor to have filter predicates
 	static simpleFilterBy(input: Array<Recipe>, filters: Array<FilterModel>): Array<Recipe> {
 		if (filters.length !== 0) {
 			const fType = filters[0].filterType;
@@ -62,6 +63,9 @@ export class Persistence {
 							}
 							break;
 						case FilterType.NUMBER_OF_COMPONENTS:
+							if (aFilter.value === "many" && recipe.components.length > 5) {
+								return true;
+							}
 							if (recipe.components.length + "" === aFilter.value) { // TODO: think about value
 								return true;
 							}

@@ -1,40 +1,44 @@
 import * as React from "react";
 import { PureComponent } from "react";
-import "./style/searchable.css";
-import TagModel from "../model/TagModel";
+import "./style/searchableTagCloud.css";
 import SearchBox from "../../searchbox/SearchBox";
+import FilterModel from "../../../model/FilterModel";
 
 export type SearchableTagCloudStateProps = {
-	tags: Array<TagModel>,
+	tags: Array<FilterModel>,
 	title: string
+	maxItemsVisible: number;
+	// filterString: string;
 };
 
 export type SearchableTagCloudDispatchProps = {
-	onTagClick(clickedTag: TagModel): void;
+	onTagClick(clickedTag: FilterModel): void;
 };
 
-export default class SearchableTagCloud extends PureComponent<SearchableTagCloudStateProps & SearchableTagCloudDispatchProps> {
+type SearchableTagCloudProps = SearchableTagCloudStateProps & SearchableTagCloudDispatchProps;
+
+export default class SearchableTagCloud extends PureComponent<SearchableTagCloudProps> {
 
 	constructor(props: any) {
 		super(props);
 	}
 
 	public render() {
-		const tags = this.props.tags.map((tag) => {
+		const tags = this.props.tags.map((filter) => {
 			return (
 				<div
-					className={"tagWrapper " + (tag.isSelected ? "selected" : "")}
-					key={tag.filter.id}
+					className={"tagWrapper " + (filter.isSelected ? "selected" : "")}
+					key={filter.id}
 					onClick={() => {
-						this.props.onTagClick(tag);
+						this.props.onTagClick(filter);
 					}}
 				>
-					<div className="tag">{tag.filter.value}</div>
+					<div className="tag">{filter.value}</div>
 				</div>
 			);
 		});
 		return (
-			<div>
+			<div className="searchableTagCloud">
 				<div className="titleContainer">{this.props.title}</div>
 				<SearchBox/>
 				<div className="tagContainer">
