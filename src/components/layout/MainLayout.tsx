@@ -6,7 +6,7 @@ import Menu from "../mainmenu/Menu";
 import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
 import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
 import FooterWidget from "../footer/FooterWidget";
-import { default as SimpleTagCloudComponent } from "../tagcloud/simple/SimpleTagCloudComponent";
+import SimpleTagCloudComponent from "../tagcloud/simple/SimpleTagCloudComponent";
 import { FilterType } from "../../model/FilterType";
 import SearchableTagCloudComponent from "../tagcloud/searchable/SearchableTagCloudComponent";
 

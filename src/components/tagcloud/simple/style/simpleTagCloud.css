@@ -49,6 +49,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     user-select: none; /*todo: remove*/
+    max-width: 60px;
     min-width: 0;
     overflow: hidden;
 }
@@ -59,8 +60,9 @@
 }
 
 .titleContainer {
-    font-size: 16px;
+    font-size: 19px;
     color: #656565;
+    margin-bottom: 5px;
 }
 
 .simpleTagCloud {

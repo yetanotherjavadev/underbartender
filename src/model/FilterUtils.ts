@@ -11,7 +11,14 @@ export class FilterUtils {
 		return false;
 	}
 
+	// TODO: refactor
 	static getStrengthGroupId(strength: number): string {
-		return "sg" + strength % 5;
+		if (strength <= 25) {
+			return "sg" + strength % 5;
+		} else if (strength > 26 && strength <= 40) {
+			return "sg6";
+		} else {
+			return "sg7";
+		}
 	}
 }

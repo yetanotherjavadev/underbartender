@@ -4,8 +4,7 @@ import { AppState } from "../../../state/AppState";
 import { FilterType } from "../../../model/FilterType";
 import FilterModel from "../../../model/FilterModel";
 import { filterActions } from "../../../redux/actions/FilterAction";
-import {
-	default as SearchableTagCloud,
+import SearchableTagCloud, {
 	SearchableTagCloudDispatchProps,
 	SearchableTagCloudStateProps
 } from "./SearchableTagCloud";
@@ -17,7 +16,7 @@ interface Props {
 }
 
 const mapStateToProps = (state: AppState, props: Props): SearchableTagCloudStateProps => ({
-	tags: state.filterState.appliedFilters.filter((filter) => filter.filterType === props.filterType),
+	allTags: state.filterState.appliedFilters.filter((filter) => filter.filterType === props.filterType),
 	title: props.title,
 	maxItemsVisible: props.maxItemsVisible,
 });

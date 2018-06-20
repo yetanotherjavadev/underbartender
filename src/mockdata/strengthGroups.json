@@ -39,5 +39,19 @@
     "description": "TODO: provide a description",
     "minStrength": 21,
     "maxStrength": 25
+  },
+  {
+    "id": "sg6",
+    "name": "Heavy",
+    "description": "TODO: provide a description",
+    "minStrength": 26,
+    "maxStrength": 40
+  },
+  {
+    "id": "sg7",
+    "name": "Brutal",
+    "description": "TODO: provide a description",
+    "minStrength": 41,
+    "maxStrength": 96
   }
 ]

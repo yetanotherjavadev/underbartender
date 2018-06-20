@@ -21,7 +21,10 @@ export default class CocktailWidget extends PureComponent<CocktailWidgetStatePro
 			);
 			return (
 				<div className="cocktailWidget">
-					<div className="headerLabel">{this.props.recipe.name}</div>
+					<div className="titleGroup">
+						<div className="headerLabel">{this.props.recipe.name}</div>
+						<div className="strengthLabel">{this.props.recipe.strength}% ABV</div>
+					</div>
 					<div className="description">{this.props.recipe.description}</div>
 					<div className="ingredientsTable">
 						{ingredients}
