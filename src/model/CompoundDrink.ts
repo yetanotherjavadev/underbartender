@@ -3,7 +3,7 @@ import { Liquid } from "./Liquid";
 export class CompoundDrink {
 	id: string;
 	name: string;
-	type: DrinkType;
+	typeId: string;
 
 	components: Array<Liquid>;
 	strength: number;

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "sg0",
+    "name": "Non-Alcoholic",
+    "description": "You can do it whenever you want ",
+    "minStrength": 0
+  },
+  {
+    "id": "sg1",
+    "name": "Kids",
+    "description": "TODO: provide a description",
+    "minStrength": 0,
+    "maxStrength": 5
+  },
+  {
+    "id": "sg2",
+    "name": "Teen",
+    "description": "TODO: provide a description",
+    "minStrength": 6,
+    "maxStrength": 10
+  },
+  {
+    "id": "sg3",
+    "name": "Youth",
+    "description": "TODO: provide a description",
+    "minStrength": 11,
+    "maxStrength": 15
+  },
+  {
+    "id": "sg4",
+    "name": "Regular",
+    "description": "TODO: provide a description",
+    "minStrength": 16,
+    "maxStrength": 20
+  },
+  {
+    "id": "sg5",
+    "name": "Mature",
+    "description": "TODO: provide a description",
+    "minStrength": 21,
+    "maxStrength": 25
+  }
+]

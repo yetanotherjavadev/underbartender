@@ -18,7 +18,7 @@ const mapStateToProps = (state: AppState, props: Props): SimpleTagCloudStateProp
 
 const mapDispatchToProps = (dispatch: Dispatch): SimpleTagCloudDispatchProps => ({
 	onTagClick: (filterModel: FilterModel) => {
-		window.console.log("Clicked on component tag with name: " + filterModel.text);
+		window.console.log("Clicked on component tag with name: " + filterModel.value);
 
 		filterModel.isSelected = !filterModel.isSelected;
 		dispatch(filterActions.filtersChanged([filterModel]));

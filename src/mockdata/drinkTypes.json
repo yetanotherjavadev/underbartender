@@ -1,0 +1,42 @@
+[
+  {
+    "id": "dt0",
+    "name": "Non-Alcoholic",
+    "description": "You can do it whenever you want "
+  },
+  {
+    "id": "dt1",
+    "name": "Classic",
+    "description": "Eternal classics"
+  },
+  {
+    "id": "dt2",
+    "name": "Male",
+    "description": "TODO: provide a description"
+  },
+  {
+    "id": "dt3",
+    "name": "Female",
+    "description": "TODO: provide a description"
+  },
+  {
+    "id": "dt4",
+    "name": "\"Samoan Pub\"-like",
+    "description": "TODO: provide a description"
+  },
+  {
+    "id": "dt5",
+    "name": "Extreme",
+    "description": "TODO: provide a description"
+  },
+  {
+    "id": "dt6",
+    "name": "Shot",
+    "description": "TODO: provide a description"
+  },
+  {
+    "id": "dt7",
+    "name": "Classic Long",
+    "description": "TODO: provide a description"
+  }
+]

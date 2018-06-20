@@ -1,7 +1,5 @@
-enum DrinkType {
-	MALE,
-	FEMALE,
-	SAMOAN_PUB_LIKE,
-	EXTREME,
-	PERFORMANCE
+export default class DrinkType {
+	id: string;
+	name: string;
+	description: string;
 }

@@ -28,7 +28,7 @@ export default class SimpleTagCloud extends PureComponent<SimpleTagCloudStatePro
 						this.props.onTagClick(filter);
 					}}
 				>
-					<div className="tag">{filter.text}</div>
+					<div className="tag">{filter.value}</div>
 				</div>
 			);
 		});

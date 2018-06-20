@@ -3,7 +3,7 @@
     flex: 1 1 auto;
     justify-content: flex-start;
     flex-wrap: wrap;
-    max-height: 75px;
+    max-height: 70px;
 }
 
 .tagWrapper {
@@ -11,15 +11,16 @@
     background-color: white;
     display: flex;
     align-content: center;
-    flex: 0 0 100px;
+    flex: 1 1 60px;
     height: 26px;
     border-radius: 30px;
-    margin: 5px;
+    margin: 2px 5px 2px 5px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    max-width: 120px;
     border: 1px solid lightgray;
+    min-width: 0;
+    max-width: 100px;
 }
 
 .tagWrapper.selected {
@@ -45,10 +46,11 @@
     justify-content: center;
     /*color: grey;*/
     color: black;
-    flex: 1 1 auto;
-    display: flex;
+    white-space: nowrap;
     text-overflow: ellipsis;
     user-select: none; /*todo: remove*/
+    min-width: 0;
+    overflow: hidden;
 }
 
 .removeTagCross {

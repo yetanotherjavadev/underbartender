@@ -20,9 +20,14 @@ class MainLayout extends PureComponent {
 				</div>
 				<div className="workingArea">
 					<div className="leftPanel">
-						<GenericTagCloud title="Select Components" filterType={FilterType.COCKTAIL_COMPONENT}/>
-						<GenericTagCloud title="Select Country" filterType={FilterType.COUNTRY}/>
-						<GenericTagCloud title="Select Strength" filterType={FilterType.STRENGTH}/>
+						<div className="filterArea">
+							<GenericTagCloud title="Components" filterType={FilterType.COCKTAIL_COMPONENT}/>
+							<GenericTagCloud title="Number of components" filterType={FilterType.NUMBER_OF_COMPONENTS}/>
+							<GenericTagCloud title="Country of Origin" filterType={FilterType.COUNTRY_OF_ORIGIN}/>
+							{/*<GenericTagCloud title="Cocktail Type" filterType={FilterType.COCKTAIL_TYPE}/>*/}
+							<GenericTagCloud title="Strength" filterType={FilterType.STRENGTH_GROUP}/>
+							{/*<GenericTagCloud title="Quick Filter" filterType={FilterType.QUICK_FILTER}/>*/}
+						</div>
 					</div>
 					<div className="centralPanel">
 						<CocktailsListContainer/>

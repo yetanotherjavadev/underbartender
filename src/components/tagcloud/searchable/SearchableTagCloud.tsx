@@ -29,7 +29,7 @@ export default class SearchableTagCloud extends PureComponent<SearchableTagCloud
 						this.props.onTagClick(tag);
 					}}
 				>
-					<div className="tag">{tag.filter.text}</div>
+					<div className="tag">{tag.filter.value}</div>
 				</div>
 			);
 		});

@@ -41,6 +41,12 @@
     flex: 1 1 25%;
 }
 
+.filterArea {
+    flex-direction: column;
+    display: flex;
+    flex: 1 1 auto;
+}
+
 .centralPanel {
     display: flex;
     flex: 1 1 25%;

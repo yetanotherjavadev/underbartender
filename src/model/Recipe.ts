@@ -6,6 +6,11 @@ export default class Recipe {
 	text: string;
 	countryOfOriginId: string;
 	strength: number; // approximate strength
+	cocktailTypeId: string;
+
+	constructor(name: string) {
+		this.name = name;
+	}
 }
 
 class Component {

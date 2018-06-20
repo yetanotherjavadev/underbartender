@@ -13,20 +13,26 @@ export default class CocktailWidget extends PureComponent<CocktailWidgetStatePro
 	}
 
 	public render() {
-		const ingredients = this.props.recipe.components.map((ingredient) => (
-			<div className="ingredient" key={ingredient.name}>
-				<div className="ingredientName" >{ingredient.amount} of {ingredient.name}</div>
-			</div>)
-		);
-		return (
-			<div className="cocktailWidget">
-				<div className="headerLabel">{this.props.recipe.name}</div>
-				<div className="description">{this.props.recipe.description}</div>
-				<div className="ingredientsTable">
-					{ingredients}
+		if (this.props.recipe.name !== "nothing") {
+			const ingredients = this.props.recipe.components.map((ingredient) => (
+				<div className="ingredient" key={ingredient.name}>
+					<div className="ingredientName">{ingredient.amount} of {ingredient.name}</div>
+				</div>)
+			);
+			return (
+				<div className="cocktailWidget">
+					<div className="headerLabel">{this.props.recipe.name}</div>
+					<div className="description">{this.props.recipe.description}</div>
+					<div className="ingredientsTable">
+						{ingredients}
+					</div>
+					<div className="recipeText">{this.props.recipe.text}</div>
 				</div>
-				<div className="recipeText">{this.props.recipe.text}</div>
-			</div>
-		);
+			);
+		} else {
+			return (
+				<div className="noRecipeAvailable">No recipe selected</div>
+			);
+		}
 	}
 }

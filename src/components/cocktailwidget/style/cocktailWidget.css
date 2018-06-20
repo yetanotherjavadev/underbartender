@@ -43,3 +43,8 @@
     margin-top: 15px;
     color: darkgray;
 }
+
+.noRecipeAvailable {
+    display: flex;
+    color: lightgray;
+}

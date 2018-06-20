@@ -1,0 +1,26 @@
+[
+  {
+   "id": "qf1",
+    "value": "QF1",
+    "filterType": "QUICK_FILTER",
+    "isSelected": false
+  },
+  {
+    "id": "qf2",
+    "value": "QF2",
+    "filterType": "QUICK_FILTER",
+    "isSelected": false
+  },
+  {
+    "id": "qf3",
+    "value": "QF3",
+    "filterType": "QUICK_FILTER",
+    "isSelected": false
+  },
+  {
+    "id": "qf4",
+    "value": "QF4",
+    "filterType": "QUICK_FILTER",
+    "isSelected": false
+  }
+]

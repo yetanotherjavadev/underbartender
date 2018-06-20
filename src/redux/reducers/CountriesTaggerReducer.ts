@@ -8,14 +8,14 @@ import { CountriesTaggerState } from "../../state/CountriesTaggerState";
 
 // initial state of componentsTagCloudState
 const initialState: CountriesTaggerState = {
-	tags: Persistence.getAllCountries().map((liquid) => (new FilterModel(liquid.id, liquid.name, FilterType.COUNTRY)))
+	tags: Persistence.getAllCountries().map((liquid) => (new FilterModel(liquid.id, liquid.name, FilterType.COUNTRY_OF_ORIGIN)))
 };
 
 export const changeSelectedTagsReducer = (state: Array<FilterModel> = initialState.tags, action: FilterAction): Array<FilterModel> => {
 
 	// this will reset the current selected tags
 	if (action.type === FilterActionType.FILTERS_CHANGED) {
-		let changedFilters: Array<FilterModel> = action.payload.changedFilters.filter((filter) => filter.filterType === FilterType.COUNTRY);
+		let changedFilters: Array<FilterModel> = action.payload.changedFilters.filter((filter) => filter.filterType === FilterType.COUNTRY_OF_ORIGIN);
 		if (changedFilters.length !== 0) {
 			return changedFilters;
 		}
