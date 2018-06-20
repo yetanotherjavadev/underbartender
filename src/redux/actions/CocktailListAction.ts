@@ -6,7 +6,7 @@ export enum CocktailListActionType {
 }
 
 export interface CocktailListActionPayload {
-	selectedCocktailId: number;
+	selectedItemId: number;
 	filter: string;
 }
 
@@ -15,7 +15,7 @@ export interface CocktailListAction extends GenericAction<CocktailListActionPayl
 export const cocktailListActions = {
 	changeSelectedItem: (selectedItem: number) => ({
 		type: CocktailListActionType.CHANGE_SELECTED_ITEM,
-		payload: {selectedCocktailId: selectedItem}
+		payload: {selectedItemId: selectedItem}
 	}),
 	changeFilterString: (filter: string) => ({
 		type: CocktailListActionType.CHANGE_FILTER,

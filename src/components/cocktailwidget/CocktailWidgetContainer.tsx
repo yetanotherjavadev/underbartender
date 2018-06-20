@@ -6,7 +6,7 @@ import { AppState } from "../../state/AppState";
 
 const mapStateToProps = (state: AppState): CocktailWidgetStateProps => {
 	return {
-		recipe: Persistence.getRecipeById(state.cocktailListState.selectedCocktailId)
+		recipe: Persistence.getRecipeById(state.cocktailListState.selectedItemId)
 	};
 };
 

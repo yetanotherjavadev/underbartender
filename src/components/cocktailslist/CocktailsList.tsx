@@ -7,20 +7,24 @@ import { Persistence } from "../../model/Persistence";
 
 export type CocktailsListStateProps = {
 	cocktails: Array<number>;
-	selectedCocktailId: number;
+	selectedItemId: number;
 };
 
 export type CocktailsListDispatchProps = {
-	onClick(clickedItemId: number): void;
+	actions: {
+		changeSelectedItem(clickedItemId: number): void;
+	}
 };
 
-export default class CocktailsList extends PureComponent<CocktailsListStateProps & CocktailsListDispatchProps> {
+export type CocktailListProps = CocktailsListStateProps & CocktailsListDispatchProps;
+
+export default class CocktailsList extends PureComponent<CocktailListProps> {
 	constructor(props: any) {
 		super(props);
 	}
 
 	itemActive(id: number) {
-		return id === this.props.selectedCocktailId;
+		return id === this.props.selectedItemId;
 	}
 
 	public render() {
@@ -31,7 +35,7 @@ export default class CocktailsList extends PureComponent<CocktailsListStateProps
 					active={this.itemActive(cocktail.id)}
 					key={cocktailId}
 					onClick={() => {
-						this.props.onClick(cocktail.id);
+						this.props.actions.changeSelectedItem(cocktail.id);
 					}}
 				>{cocktail.name}
 				</ListGroupItem>
