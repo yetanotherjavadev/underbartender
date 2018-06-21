@@ -9,7 +9,7 @@
     "id": "sg1",
     "name": "Kids",
     "description": "TODO: provide a description",
-    "minStrength": 0,
+    "minStrength": 1,
     "maxStrength": 5
   },
   {

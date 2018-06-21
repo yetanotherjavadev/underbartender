@@ -58,7 +58,7 @@ export class Persistence {
 							}
 							break;
 						case FilterType.STRENGTH_GROUP:
-							if (FilterUtils.getStrengthGroupId(recipe.strength) === aFilter.id) {
+							if (Persistence.getStrengthGroupId(recipe.strength) === aFilter.id) {
 								return true;
 							}
 							break;
@@ -147,6 +147,15 @@ export class Persistence {
 
 	static getAllStrengthGroup(): Array<Country> {
 		return strengthGroups;
+	}
+
+	static getStrengthGroupId(strength: number): string {
+		for (let strengthGroup of strengthGroups) {
+			if (strengthGroup.minStrength <= strength && strengthGroup.maxStrength >= strength) {
+				return strengthGroup.id;
+			}
+		}
+		return "";
 	}
 
 	static getAllGlassTypes(): Array<GlassType> {
