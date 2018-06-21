@@ -24,7 +24,11 @@
     color: #9c9c9c;
     flex: 0 0 15px;
     margin-top: 0;
-    margin-bottom: 10px;
+}
+
+.countryOfOrigin {
+    font-size: 10px;
+    color: #9c9c9c;
 }
 
 .description {

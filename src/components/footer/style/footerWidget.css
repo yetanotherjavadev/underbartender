@@ -1,8 +1,10 @@
 .footerPanel {
     display: flex;
-    flex: 1 1 auto;
+    flex: 0 0 40px;
     align-content: center;
     justify-content: space-between;
+    padding: 0 10px 10px 10px;
+    border-top: 1px solid lightgray;
 }
 
 .menuBar {

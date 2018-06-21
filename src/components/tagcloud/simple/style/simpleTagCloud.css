@@ -63,6 +63,7 @@
     font-size: 19px;
     color: #656565;
     margin-bottom: 5px;
+    user-select: none;
 }
 
 .simpleTagCloud {

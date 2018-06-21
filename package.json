@@ -13,7 +13,8 @@
     "sass-loader": "^7.0.1",
     "redux-devtools-log-monitor": "latest",
     "redux-devtools-dock-monitor": "latest",
-    "redux-devtools": "latest"
+    "redux-devtools": "latest",
+    "react-router-dom": "latest"
   },
   "scripts": {
     "start": "react-scripts-ts start",
@@ -28,6 +29,7 @@
     "@types/react-bootstrap": "^0.32.9",
     "@types/react-dom": "^16.0.5",
     "@types/react-redux": "^6.0.0",
+    "@types/react-router-dom": "^4.2.7",
     "@types/redux-devtools": "^3.0.44",
     "@types/redux-devtools-dock-monitor": "^1.1.32",
     "@types/redux-devtools-log-monitor": "^1.0.33",

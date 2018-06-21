@@ -1,25 +1,17 @@
 import * as React from "react";
 import { PureComponent } from "react";
-import HeaderWidget from "../Header/HeaderWidget";
 import "./style/mainLayout.css";
-import Menu from "../mainmenu/Menu";
 import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
 import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
-import FooterWidget from "../footer/FooterWidget";
 import SimpleTagCloudComponent from "../tagcloud/simple/SimpleTagCloudComponent";
 import { FilterType } from "../../model/FilterType";
 import SearchableTagCloudComponent from "../tagcloud/searchable/SearchableTagCloudComponent";
 
-// TODO: add all filter types into filters area
-class MainLayout extends PureComponent {
-
+// this is a filter page
+export default class MainLayout extends PureComponent {
 	public render() {
 		return (
 			<div className="mainLayout">
-				<div className="topPanel">
-					<HeaderWidget/>
-					<Menu/>
-				</div>
 				<div className="workingArea">
 					<div className="leftPanel">
 						<div className="filterArea">
@@ -38,12 +30,7 @@ class MainLayout extends PureComponent {
 						<CocktailWidgetContainer/>
 					</div>
 				</div>
-				<div className="bottomPanel">
-					<FooterWidget/>
-				</div>
 			</div>
 		);
 	}
 }
-
-export default MainLayout;

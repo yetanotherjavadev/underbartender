@@ -2,6 +2,7 @@ import * as React from "react";
 import { PureComponent } from "react";
 import "./style/cocktailWidget.css";
 import Recipe from "../../model/Recipe";
+import { Persistence } from "../../model/Persistence";
 
 export type CocktailWidgetStateProps = {
 	recipe: Recipe;
@@ -23,7 +24,8 @@ export default class CocktailWidget extends PureComponent<CocktailWidgetStatePro
 				<div className="cocktailWidget">
 					<div className="titleGroup">
 						<div className="headerLabel">{this.props.recipe.name}</div>
-						<div className="strengthLabel">{this.props.recipe.strength}% ABV</div>
+						<div className="strengthLabel">{this.props.recipe.strength + "% ABV"}</div>
+						<div className="countryOfOrigin">{Persistence.getCountryById(this.props.recipe.countryOfOriginId).name}</div>
 					</div>
 					<div className="description">{this.props.recipe.description}</div>
 					<div className="ingredientsTable">
