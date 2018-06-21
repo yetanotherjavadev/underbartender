@@ -36,7 +36,186 @@
     "density": 0.94,
     "sugar": 0.0,
     "calories": 140,
+    "countryOfOriginId": 35,
+    "category": "DISTILLATE"
+  },
+  {
+    "id": "l5",
+    "name": "Tequilla",
+    "strength": 40,
+    "density": 0.94,
+    "sugar": 0.0,
+    "calories": 140,
+    "countryOfOriginId": 19,
+    "category": "DISTILLATE"
+  },
+  {
+    "id": "l6",
+    "name": "Sweet Martini",
+    "strength": 15,
+    "density": 0.94,
+    "sugar": 0.0,
+    "calories": 140,
+    "countryOfOriginId": 32,
+    "category": "VERMOUTH"
+  },
+  {
+    "id": "l7",
+    "name": "Dry White Wine",
+    "strength": 12,
+    "density": 0.94,
+    "sugar": 0.7,
+    "calories": 120,
+    "countryOfOriginId": 0,
+    "category": "WINE"
+  },
+  {
+    "id": "l8",
+    "name": "Dry Red Wine",
+    "strength": 14,
+    "density": 0.94,
+    "sugar": 0.7,
+    "calories": 140,
+    "countryOfOriginId": 0,
+    "category": "DISTILLATE"
+  },{
+  "id": "l9",
+  "name": "Campari",
+  "strength": 40,
+  "density": 1.06,
+  "sugar": 5.0,
+  "calories": 100,
+  "countryOfOriginId": 32,
+  "category": "BITTER"
+},
+  {
+    "id": "l10",
+    "name": "Dry Cider",
+    "strength": 5,
+    "density": 1.01,
+    "sugar": 0.0,
+    "calories": 70,
+    "countryOfOriginId": 33,
+    "category": "FERMENTED"
+  },
+  {
+    "id": "l11",
+    "name": "Gin",
+    "strength": 47,
+    "density": 0.94,
+    "sugar": 0.0,
+    "calories": 140,
     "countryOfOriginId": 4,
     "category": "DISTILLATE"
+  },
+  {
+    "id": "l12",
+    "name": "Rum",
+    "strength": 40,
+    "density": 0.94,
+    "sugar": 0.0,
+    "calories": 140,
+    "countryOfOriginId": 20,
+    "category": "DISTILLATE"
+  },
+  {
+    "id": "l13",
+    "name": "Absinthe Xenta",
+    "strength": 70,
+    "density": 0.94,
+    "sugar": 0.0,
+    "calories": 140,
+    "countryOfOriginId": 34,
+    "category": "DISTILLATE"
+  },
+  {
+    "id": "l14",
+    "name": "Cognac",
+    "strength": 40,
+    "density": 0.94,
+    "sugar": 0.0,
+    "calories": 140,
+    "countryOfOriginId": 33,
+    "category": "DISTILLATE"
+  },
+  {
+    "id": "l15",
+    "name": "Jagermeister",
+    "strength": 35,
+    "density": 1.01,
+    "sugar": 17.0,
+    "calories": 240,
+    "countryOfOriginId": 3,
+    "category": "LIQUOR"
+  },
+  {
+    "id": "l16",
+    "name": "Baileys Irish Cream",
+    "strength": 16,
+    "density": 1.05,
+    "sugar": 20.0,
+    "calories": 240,
+    "countryOfOriginId": 33,
+    "category": "LIQUOR"
+  },
+  {
+    "id": "l17",
+    "name": "Limoncello",
+    "strength": 30,
+    "density": 1.06,
+    "sugar": 15.0,
+    "calories": 240,
+    "countryOfOriginId": 32,
+    "category": "LIQUOR"
+  },
+  {
+    "id": "l18",
+    "name": "Drambuie",
+    "strength": 40,
+    "density": 1.08,
+    "sugar": 20.0,
+    "calories": 240,
+    "countryOfOriginId": 36,
+    "category": "LIQUOR"
+  },
+  {
+    "id": "l19",
+    "name": "Kahlua",
+    "strength": 25,
+    "density": 1.16,
+    "sugar": 18.0,
+    "calories": 200,
+    "countryOfOriginId": 19,
+    "category": "LIQUOR"
+  },
+  {
+    "id": "l20",
+    "name": "Cointreau",
+    "strength": 40,
+    "density": 1.04,
+    "sugar": 20.0,
+    "calories": 200,
+    "countryOfOriginId": 33,
+    "category": "LIQUOR"
+  },
+  {
+    "id": "l21",
+    "name": "Benedictine",
+    "strength": 40,
+    "density": 1.07,
+    "sugar": 20.0,
+    "calories": 200,
+    "countryOfOriginId": 33,
+    "category": "LIQUOR"
+  },
+  {
+    "id": "l22",
+    "name": "Triple Sec",
+    "strength": 40,
+    "density": 1.09,
+    "sugar": 20.0,
+    "calories": 200,
+    "countryOfOriginId": 33,
+    "category": "LIQUOR"
   }
 ]

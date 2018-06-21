@@ -23,7 +23,7 @@ class MainLayout extends PureComponent {
 				<div className="workingArea">
 					<div className="leftPanel">
 						<div className="filterArea">
-							<SimpleTagCloudComponent title="Components" filterType={FilterType.COCKTAIL_COMPONENT}/>
+							<SearchableTagCloudComponent maxItemsVisible={5} title="Component" filterType={FilterType.COCKTAIL_COMPONENT}/>
 							<SimpleTagCloudComponent title="Number of components" filterType={FilterType.NUMBER_OF_COMPONENTS}/>
 							<SearchableTagCloudComponent maxItemsVisible={5} title="Country of Origin" filterType={FilterType.COUNTRY_OF_ORIGIN}/>
 							{/*<GenericTagCloud title="Cocktail Type" filterType={FilterType.COCKTAIL_TYPE}/>*/}
