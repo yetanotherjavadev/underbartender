@@ -10,6 +10,7 @@ export type SearchableTagCloudStateProps = {
 
 export type SearchableTagCloudDispatchProps = {
 	onTagClick(clickedTag: FilterModel): void;
+	onClearButtonClick(filtersToReset: Array<FilterModel>): void;
 };
 
 type SearchableTagCloudProps = SearchableTagCloudStateProps & SearchableTagCloudDispatchProps;
@@ -23,12 +24,6 @@ export default class SearchableTagCloud extends React.Component<SearchableTagClo
 	constructor(props: any) {
 		super(props);
 		this.state = {filterString: ""};
-	}
-
-	handleFilterChange(e: any) {
-		this.setState({
-			filterString: e.target.value
-		});
 	}
 
 	tagsComparator = (fm1: FilterModel, fm2: FilterModel) => {
@@ -59,12 +54,39 @@ export default class SearchableTagCloud extends React.Component<SearchableTagClo
 		}).slice(0, this.props.maxItemsVisible);
 		return (
 			<div className="searchableTagCloud">
-				<div className="titleContainer">{this.props.title}</div>
+				<div className="stc-titleGroup">
+					<div className="stc-titleLabel">{this.props.title}</div>
+					{this.isAnyFilterActive() &&
+						<div className="removeFiltersLabel" onClick={e => this.clearFilters(e)}>Clear filters</div>
+					}
+				</div>
 				<input type="search" value={this.state.filterString} className="searchInput" onChange={e => this.handleFilterChange(e)}/>
 				<div className="tagContainer">
 					{tags}
 				</div>
 			</div>
 		);
+	}
+
+	private handleFilterChange(e: any) {
+		this.setState({
+			filterString: e.target.value
+		});
+	}
+
+	private clearFilters(e: any) {
+		this.setState({
+			filterString: ""
+		});
+		this.props.onClearButtonClick(this.props.allTags.filter((filter: FilterModel) => filter.isSelected));
+	}
+
+	private isAnyFilterActive(): boolean {
+		for (let filterModel of this.props.allTags) {
+			if (filterModel.isSelected) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

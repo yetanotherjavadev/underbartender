@@ -59,10 +59,25 @@
     font-weight: bold;
 }
 
-.titleContainer {
+.stc-titleGroup {
+    display: flex;
+    flex: 1 1 auto;
+    max-height: 20px;
+    margin-bottom: 5px;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.stc-titleLabel {
     font-size: 19px;
     color: #656565;
-    margin-bottom: 5px;
+}
+
+.removeFiltersLabel {
+    color: lightgray;
+    font-size: 12px;
+    align-self: center;
+    cursor: pointer;
 }
 
 .searchableTagCloud {
@@ -80,6 +95,10 @@
     border-bottom: 1px solid lightgray;
     margin: 10px;
     outline: none;
+}
+
+.searchInput::-webkit-search-cancel-button{
+    cursor: pointer;
 }
 
 .popupPanel {

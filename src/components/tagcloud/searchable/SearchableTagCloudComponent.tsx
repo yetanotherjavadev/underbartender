@@ -28,6 +28,13 @@ const mapDispatchToProps = (dispatch: Dispatch): SearchableTagCloudDispatchProps
 		filterModel.isSelected = !filterModel.isSelected;
 		dispatch(filterActions.filtersChanged([filterModel]));
 	},
+	onClearButtonClick: (filtersToReset: Array<FilterModel>) => {
+		window.console.log("cleared filter tags");
+		dispatch(filterActions.filtersChanged(filtersToReset.map((filter: FilterModel) => {
+			filter.isSelected = false;
+			return filter;
+		})));
+	},
 });
 
 const SearchableTagCloudComponent = connect(
