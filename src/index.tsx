@@ -2,15 +2,15 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "./index.css";
 import App from "./app/App";
-import { BrowserRouter } from "react-router-dom";
-import { mainStore } from "./redux/store/AppMainStore";
+import { history, mainStore } from "./redux/store/AppMainStore";
 import { Provider } from "react-redux";
+import { ConnectedRouter } from "connected-react-router";
 
 ReactDOM.render((
 		<Provider store={mainStore}>
-			<BrowserRouter>
+			<ConnectedRouter history={history}>
 				<App/>
-			</BrowserRouter>
+			</ConnectedRouter>
 		</Provider>
 	),
 	document.getElementById("root"));

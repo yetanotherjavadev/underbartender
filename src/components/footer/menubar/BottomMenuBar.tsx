@@ -12,8 +12,7 @@ export default class BottomMenuBar extends PureComponent {
 	render() {
 		return (
 			<ul className="menuItemsList">
-				<li className="item"><NavLink activeClassName="activeLink" to="/filter-selector">Filter Selector</NavLink></li>
-				<li className="item"><NavLink activeClassName="activeLink" to="/list">A List</NavLink></li>
+				<li className="item"><NavLink activeClassName="activeLink" to="/cocktails">Find one</NavLink></li>
 				<li className="item"><NavLink activeClassName="activeLink" to="/support">Support</NavLink></li>
 				<li className="item"><NavLink activeClassName="activeLink" to="/faq">FAQ</NavLink></li>
 				<li className="item"><NavLink activeClassName="activeLink" to="/about">About</NavLink></li>

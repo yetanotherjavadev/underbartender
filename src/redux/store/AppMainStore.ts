@@ -1,27 +1,25 @@
-import { AnyAction, combineReducers, createStore, Store } from "redux";
+import { AnyAction, combineReducers, createStore, Store, applyMiddleware, compose } from "redux";
 import { cocktailListReducer } from "../reducers/CocktailListReducer";
 import { componentsTaggerReducer } from "../reducers/ComponentsTaggerReducer";
 import { AppState } from "../../state/AppState";
 import { filterReducer } from "../reducers/FilterReducer";
 import { countriesTaggerReducer } from "../reducers/CountriesTaggerReducer";
+import { createBrowserHistory } from "history";
+import { connectRouter, routerMiddleware } from "connected-react-router";
 
 // TODO: think how to avoid having keys name like "*state" but containing reducers
-const reducers = {
+const rootReducer = combineReducers({
 	cocktailListState: cocktailListReducer,
 	componentsTagCloudState: componentsTaggerReducer,
 	countriesTagCloudState: countriesTaggerReducer,
 	filterState: filterReducer,
-};
+});
 
-export const mainStore = createStore(combineReducers(reducers)) as Store<AppState, AnyAction>;
+export const history = createBrowserHistory();
 
-// TODO: add DevTools to be able to debug easily
-// export const configureStore = (rootReducer: Reducer): Store<AppState, AnyAction> => {
-// 	return createStore(
-// 		rootReducer,
-// 		compose(
-// 			applyMiddleware(...middlewares),
-// 			DevTools.instrument()
-// 		)
-// 	);
-// };
+export const mainStore = createStore(
+	connectRouter(history)(rootReducer),
+	compose(
+		applyMiddleware(routerMiddleware(history),
+	),
+)) as Store<AppState, AnyAction>;

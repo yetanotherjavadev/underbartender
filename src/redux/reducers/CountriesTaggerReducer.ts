@@ -15,11 +15,16 @@ export const changeSelectedTagsReducer = (state: Array<FilterModel> = initialSta
 
 	// this will reset the current selected tags
 	if (action.type === FilterActionType.FILTERS_CHANGED) {
-		let changedFilters: Array<FilterModel> = action.payload.changedFilters.filter((filter) => filter.filterType === FilterType.COUNTRY_OF_ORIGIN);
+		let changedFilters: Array<FilterModel> = action.payload.changedFilters.filter((filter: FilterModel) =>
+			filter.filterType === FilterType.COUNTRY_OF_ORIGIN);
 		if (changedFilters.length !== 0) {
 			return changedFilters;
 		}
 	}
+	// if (action.type === LOCATION_CHANGE) {
+	// 	window.console.log(action);
+	//
+	// }
 	return state;
 };
 

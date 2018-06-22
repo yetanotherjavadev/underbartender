@@ -1,14 +1,15 @@
 import * as React from "react";
-import { PureComponent } from "react";
+import { Component } from "react";
 import "./style/mainLayout.css";
 import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
 import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
 import SimpleTagCloudComponent from "../tagcloud/simple/SimpleTagCloudComponent";
 import { FilterType } from "../../model/FilterType";
 import SearchableTagCloudComponent from "../tagcloud/searchable/SearchableTagCloudComponent";
+import { RouteComponentProps, withRouter } from "react-router";
 
 // this is a filter page
-export default class MainLayout extends PureComponent {
+class FilterSelector extends Component<RouteComponentProps<any>> {
 	public render() {
 		return (
 			<div className="mainLayout">
@@ -34,3 +35,5 @@ export default class MainLayout extends PureComponent {
 		);
 	}
 }
+
+export default withRouter(FilterSelector);
