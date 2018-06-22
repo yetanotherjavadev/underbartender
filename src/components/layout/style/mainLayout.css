@@ -20,7 +20,6 @@
 .mainLayout {
     display: flex;
     flex: 1 1 auto;
-    background: white;
     flex-direction: column;
     height: 100%;
 }

@@ -10,9 +10,8 @@ class MainPanel extends Component<RouteComponentProps<any>> {
 	render() {
 		return (
 			<div className="mainPanel">
-				<Route exact={true} path="/" component={MainLayout}/>
+				<Route exact={true} path="/filter-selector" component={MainLayout}/>
 				<Route path="/faq" component={FaqWidget}/>
-				<Route path="/faq/:question?" component={FaqWidget}/>
 				<Route path="/about" component={AboutWidget}/>
 			</div>
 		);
