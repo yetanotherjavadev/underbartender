@@ -7,12 +7,16 @@ import SimpleTagCloudComponent from "../tagcloud/simple/SimpleTagCloudComponent"
 import { FilterType } from "../../model/FilterType";
 import SearchableTagCloudComponent from "../tagcloud/searchable/SearchableTagCloudComponent";
 import { RouteComponentProps, withRouter } from "react-router";
+import StatusLineContainer from "../status/StatusLineContainer";
 
 // this is a filter page
 class FilterSelector extends Component<RouteComponentProps<any>> {
 	public render() {
 		return (
 			<div className="mainLayout">
+				<div className="statusBlock">
+					<StatusLineContainer/>
+				</div>
 				<div className="workingArea">
 					<div className="leftPanel">
 						<div className="filterArea">

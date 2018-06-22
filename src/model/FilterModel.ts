@@ -14,6 +14,6 @@ export default class FilterModel {
 	}
 
 	toString(): string {
-		return "value" + this.value + " typeId: " + this.filterType;
+		return "TypeId: " + this.filterType + "; Value: " + this.value;
 	}
 }

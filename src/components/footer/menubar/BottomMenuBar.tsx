@@ -1,7 +1,7 @@
 import * as React from "react";
 import { PureComponent } from "react";
 import "./style/menuBar.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class BottomMenuBar extends PureComponent {
 
@@ -12,10 +12,12 @@ export default class BottomMenuBar extends PureComponent {
 	render() {
 		return (
 			<ul className="menuItemsList">
-				<li className="item"><NavLink activeClassName="activeLink" to="/cocktails">Find one</NavLink></li>
-				<li className="item"><NavLink activeClassName="activeLink" to="/support">Support</NavLink></li>
-				<li className="item"><NavLink activeClassName="activeLink" to="/faq">FAQ</NavLink></li>
-				<li className="item"><NavLink activeClassName="activeLink" to="/about">About</NavLink></li>
+				<li className="item"><Link to="/cocktails">Find one</Link></li>
+				<li className="item"><Link to="/support">Support</Link></li>
+				<li className="item"><Link to="/cocktails/6">Cocktail #6</Link></li>
+				<li className="item"><Link to="/cocktails/4">Cocktail #4</Link></li>
+				<li className="item"><Link to="/faq">FAQ</Link></li>
+				<li className="item"><Link to="/about">About</Link></li>
 			</ul>
 		);
 	}
