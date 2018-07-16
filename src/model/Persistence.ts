@@ -3,6 +3,7 @@ import data from "../mockdata/recipes.json";
 import glassware from "../mockdata/glassware.json";
 import countries from "../mockdata/countries.json";
 import liquidsData from "../mockdata/liquids.json";
+import italianLiquids from "../mockdata/liquids_italy.json";
 import strengthGroups from "../mockdata/strengthGroups.json";
 import drinkTypes from "../mockdata/drinkTypes.json";
 import quickFilters from "../mockdata/quickFilters.json";
@@ -130,7 +131,7 @@ export class Persistence {
 	}
 
 	static getAllLiquids(): Array<Liquid> {
-		return liquidsData;
+		return [...liquidsData, ...italianLiquids];
 	}
 
 	static getAllCountries(): Array<Country> {

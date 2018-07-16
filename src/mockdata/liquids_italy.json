@@ -1,0 +1,172 @@
+[
+  {
+	"id": "l23",
+	"name": "Strega",
+	"strength": 40,
+	"density": 1.0,
+	"sugar": 0.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l24",
+	"name": "Amaro Fernet Branca",
+	"strength": 39,
+	"density": 1.1,
+	"sugar": 11.3,
+	"calories": 45.2,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l25",
+	"name": "Amaretto",
+	"strength": 0,
+	"density": 1.0,
+	"sugar": 0.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l26",
+	"name": "Centerba",
+	"strength": 70,
+	"density": 0.9,
+	"sugar": 5.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l27",
+	"name": "Cynar",
+	"strength": 16.5,
+	"density": 1.1,
+	"sugar": 10.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l28",
+	"name": "Frangelico",
+	"strength": 24,
+	"density": 1.1,
+	"sugar": 15.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l29",
+	"name": "Grappa",
+	"strength": 38,
+	"density": 1.0,
+	"sugar": 0.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "DISTILLATE"
+  },
+  {
+	"id": "l30",
+	"name": "Limoncello",
+	"strength": 30,
+	"density": 1.06,
+	"sugar": 15.0,
+	"calories": 240,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l31",
+	"name": "Maraschino",
+	"strength": 32,
+	"density": 1.1,
+	"sugar": 10.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l32",
+	"name": "Marsala",
+	"strength": 18,
+	"density": 1.1,
+	"sugar": 10.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "FORTIFIED_WINE"
+  },
+  {
+	"id": "l33",
+	"name": "Mellone",
+	"strength": 20,
+	"density": 1.15,
+	"sugar": 20.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l34",
+	"name": "Mezzaluna",
+	"strength": 40,
+	"density": 0.95,
+	"sugar": 0.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "DISTILLATE"
+  },
+  {
+	"id": "l35",
+	"name": "Mirto",
+	"strength": 0,
+	"density": 1.0,
+	"sugar": 0.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "NA"
+  },
+  {
+	"id": "l36",
+	"name": "Nocino",
+	"strength": 40,
+	"density": 1.1,
+	"sugar": 10.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l37",
+	"name": "Sambuca",
+	"strength": 38,
+	"density": 1.15,
+	"sugar": 20.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "LIQUOR"
+  },
+  {
+	"id": "l38",
+	"name": "Vin Santo",
+	"strength": 16,
+	"density": 1.10,
+	"sugar": 20.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "NA"
+  },
+  {
+	"id": "l39",
+	"name": "Sambuca",
+	"strength": 0,
+	"density": 1.0,
+	"sugar": 0.0,
+	"calories": 0,
+	"countryOfOriginId": 32,
+	"category": "NA"
+  }
+]
