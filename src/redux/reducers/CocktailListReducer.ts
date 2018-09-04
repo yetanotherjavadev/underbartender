@@ -40,7 +40,7 @@ export const changeSelectedItemReducer = (state: number = initialState.selectedI
 };
 
 // reminder:
-// there should always be key:value syntax here for redux to understand which exact property should be changed in store
+// there should always be key:values syntax here for redux to understand which exact property should be changed in store
 export const cocktailListReducer = combineReducers({
 	selectedItemId: changeSelectedItemReducer,
 	filter: changeFilterReducer,

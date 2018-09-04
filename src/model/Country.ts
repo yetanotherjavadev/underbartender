@@ -1,6 +1,6 @@
 export class Country {
 	id: string;
 	name: string;
-	flagIconId: number;
+	flagIconId?: number;
 	// TODO: add info about the country
 }

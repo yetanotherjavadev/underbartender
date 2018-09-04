@@ -8,15 +8,17 @@ export type SimpleTagCloudStateProps = {
 	title: string,
 };
 
-export type SimpleTagCloudDispatchProps = {
-	onTagClick(clickedTag: FilterModel): void;
-};
+export interface SimpleTagCloudDispatchProps  {
+	actions: {
+		onTagClick(clickedTag: FilterModel): void;
+	};
+}
 
 export type SimpleTagCloudProps = SimpleTagCloudStateProps & SimpleTagCloudDispatchProps;
 
 export default class SimpleTagCloud extends PureComponent<SimpleTagCloudProps> {
 
-	constructor(props: any) {
+	constructor(props: SimpleTagCloudProps) {
 		super(props);
 	}
 
@@ -27,7 +29,7 @@ export default class SimpleTagCloud extends PureComponent<SimpleTagCloudProps> {
 					className={"tagWrapper " + (filter.isSelected ? "selected" : "")}
 					key={filter.id}
 					onClick={() => {
-						this.props.onTagClick(filter);
+						this.props.actions.onTagClick(filter);
 					}}
 				>
 					<div className="tag">{filter.value}</div>

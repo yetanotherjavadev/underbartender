@@ -37,9 +37,9 @@ export default class SearchableTagCloud extends React.Component<SearchableTagClo
 	}
 
 	public render() {
-		const tags = this.props.allTags.sort(this.tagsComparator).filter((filter) =>
+		const tags = this.props.allTags && this.props.allTags.sort(this.tagsComparator).filter((filter) =>
 			(filter.isSelected || filter.value.toUpperCase().indexOf(this.state.filterString.toUpperCase()) !== -1))
-			.map((filter) => {
+			.map((filter: FilterModel) => {
 			return (
 				<div
 					className={"tagWrapper " + (filter.isSelected ? "selected" : "")}
@@ -82,9 +82,11 @@ export default class SearchableTagCloud extends React.Component<SearchableTagClo
 	}
 
 	private isAnyFilterActive(): boolean {
-		for (let filterModel of this.props.allTags) {
-			if (filterModel.isSelected) {
-				return true;
+		if (this.props.allTags) {
+			for (let filterModel of this.props.allTags) {
+				if (filterModel.isSelected) {
+					return true;
+				}
 			}
 		}
 		return false;

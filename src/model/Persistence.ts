@@ -67,7 +67,7 @@ export class Persistence {
 							if (aFilter.value === "many" && recipe.components.length > 5) {
 								return true;
 							}
-							if (recipe.components.length + "" === aFilter.value) { // TODO: think about value
+							if (recipe.components.length + "" === aFilter.value) { // TODO: think about values
 								return true;
 							}
 							break;

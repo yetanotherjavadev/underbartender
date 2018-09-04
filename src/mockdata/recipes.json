@@ -196,7 +196,7 @@
         "amount": "50 ml"
       }
     ],
-    "text": "5x and the life turns colors on",
+    "text": "5x of this and the life turns colors on",
     "countryOfOriginId": "c2",
     "strength": 40
   },
@@ -217,5 +217,259 @@
     "text": "Classics for those who can't afford Cognac",
     "countryOfOriginId": "c4",
     "strength": 10
+  },
+  {
+    "id": 9,
+    "name": "The Abyss",
+    "description": "Mixed Drink Recipe from Cocktail Builder",
+    "components": [
+      {
+        "name": "Vodka",
+        "amount": "1 oz"
+      },
+      {
+        "name": "White Rum",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Blue Curacao",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Pineapplce Juice",
+        "amount": "3 oz"
+      }
+    ],
+    "text": "Combine in a blender with ice. Top with a drizzle of blue Curacao.",
+    "countryOfOriginId": "c4",
+    "strength": 15
+  },
+  {
+    "id": 10,
+    "name": "Mexican Flag",
+    "description": "Here goes the recipe description",
+    "components": [
+      {
+        "name": "Grenadine",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Pisang Ambon",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Tequila",
+        "amount": "1/2 oz"
+      }
+    ],
+    "text": "Layer in a chilled shot glass.",
+    "countryOfOriginId": "c19",
+    "strength": 15
+  },
+  {
+    "id": 11,
+    "name": "Long Island Iced Tea",
+    "description": "Here goes the recipe description",
+    "components": [
+      {
+        "name": "Vodka",
+        "amount": "3/4 oz"
+      },
+      {
+        "name": "Gin",
+        "amount": "3/4 oz"
+      },
+      {
+        "name": "White Rum",
+        "amount": "3/4 oz"
+      },
+      {
+        "name": "Tequila",
+        "amount": "3/4 oz"
+      },
+      {
+        "name": "Triple Sec",
+        "amount": "1 oz"
+      },
+      {
+        "name": "Lemon Fresh",
+        "amount": "2 oz"
+      },
+      {
+        "name": "Cola",
+        "amount": "3 oz"
+      }
+    ],
+    "text": "Combine the ingredients over ice in a highball glass. Add the cola for color. Garnish with a slice of lemon.",
+    "countryOfOriginId": "c1",
+    "strength": 20
+  },
+  {
+    "id": 12,
+    "name": "Oaxacanite",
+    "description": "Here goes the recipe description",
+    "components": [
+      {
+        "name": "Tequila",
+        "amount": "1 1/2 oz"
+      },
+      {
+        "name": "Mezcal",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Honey Syrup",
+        "amount": "3/4 oz"
+      },
+      {
+        "name": "Lime Juice",
+        "amount": "3/4 oz"
+      }
+    ],
+    "text": "Make the honey syrup by combining 3 parts honey with 1 part hot water. Mix well and refrigerate. Once the syrup has cooled, combine all ingredients into a cocktail shaker with ice. Shake and strain into a coup glass",
+    "countryOfOriginId": "c1",
+    "strength": 15
+  },
+  {
+    "id": 13,
+    "name": "Coup De Grâce",
+    "description": "Here goes the recipe description",
+    "components": [
+      {
+        "name": "Tequila",
+        "amount": "1 oz"
+      },
+      {
+        "name": "Mezcal",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Averna",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Herbal Liqueur",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Cardamon Bitters",
+        "amount": "4 dash"
+      },
+      {
+        "name": "Lemon Zest",
+        "amount": "1 twist"
+      }
+    ],
+    "text": "Stir over ice. Strain into chilled cocktail glass. Discard lemon zest.",
+    "countryOfOriginId": "c1",
+    "strength": 12
+  },
+  {
+    "id": 14,
+    "name": "Adonis",
+    "description": "Here goes the recipe description",
+    "components": [
+      {
+        "name": "Dry Oloroso Sherry",
+        "amount": "1 1/2 oz"
+      },
+      {
+        "name": "Sweet Vermouth",
+        "amount": "1 1/2 oz"
+      },
+      {
+        "name": "Orange Bitter",
+        "amount": "2 dash"
+      },
+      {
+        "name": "Orange Peel",
+        "amount": "some"
+      }
+    ],
+    "text": "In a mixing glass with ice, stir together the sherry, vermouth, and bitters. Strain into a chilled cocktail glass and garnish with an orange peel.",
+    "countryOfOriginId": "c1",
+    "strength": 12
+  },
+  {
+    "id": 15,
+    "name": "Tuxedo",
+    "description": "Here goes the recipe description",
+    "components": [
+      {
+        "name": "Dry Oloroso Sherry",
+        "amount": "1 1/2 oz"
+      },
+      {
+        "name": "Sweet Vermouth",
+        "amount": "1 1/2 oz"
+      },
+      {
+        "name": "Orange Bitter",
+        "amount": "2 dash"
+      },
+      {
+        "name": "Orange Peel",
+        "amount": "some"
+      }
+    ],
+    "text": "In a cocktail shaker with ice, stir the ingredients until chilled. Strain into a martini glass.",
+    "countryOfOriginId": "c1",
+    "strength": 12
+  },
+  {
+    "id": 16,
+    "name": "Up to Date",
+    "description": "Here goes the recipe description",
+    "components": [
+      {
+        "name": "Rye Whiskey",
+        "amount": "1 1/4 oz"
+      },
+      {
+        "name": "Amontillado Sherry",
+        "amount": "1 oz"
+      },
+      {
+        "name": "Grand Marnier",
+        "amount": "1 oz"
+      },
+      {
+        "name": "Angostura Bitter",
+        "amount": "2 dash"
+      }
+    ],
+    "text": "In a cocktail shaker with ice, stir the ingredients until chilled. Strain into a martini glass.",
+    "countryOfOriginId": "c1",
+    "strength": 18
+  },
+  {
+    "id": 17,
+    "name": "Smooth Operator",
+    "description": "Here goes the recipe description",
+    "components": [
+      {
+        "name": "Dark Rum",
+        "amount": "1 1/2 oz"
+      },
+      {
+        "name": "Oloroso Sherry",
+        "amount": "1 1/2 oz"
+      },
+      {
+        "name": "Simple Syrup",
+        "amount": "1/2 oz"
+      },
+      {
+        "name": "Lemon Juice",
+        "amount": "1/4 oz"
+      },
+      {
+        "name": "Lemon Peel",
+        "amount": "a bit"
+      }
+    ],
+    "text": "In a cocktail shaker with ice, combine the rum, Sherry, simple syrup, and lemon juice. Shake and strain into a rocks glass with ice. Garnish with a lemon peel.",
+    "countryOfOriginId": "c1",
+    "strength": 18
   }
 ]

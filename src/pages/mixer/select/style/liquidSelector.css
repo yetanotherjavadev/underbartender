@@ -1,0 +1,9 @@
+.main {
+    flex: 0 0 400px;
+    margin: 1rem 0;
+}
+
+.reddish {
+    color: red;
+    margin-top: .5rem;
+}

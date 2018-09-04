@@ -29,7 +29,7 @@ export const changeSelectedTagsReducer = (state: Array<FilterModel> = initialSta
 };
 
 // reminder:
-// there should always be key:value syntax here for redux to understand which exact property should be changed in store
+// there should always be key:values syntax here for redux to understand which exact property should be changed in store
 export const countriesTaggerReducer = combineReducers({
 	tags: changeSelectedTagsReducer,
 }) as Reducer<ComponentsTaggerState>;

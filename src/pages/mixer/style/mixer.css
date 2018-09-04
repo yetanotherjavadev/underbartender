@@ -1,0 +1,11 @@
+.mixerMain {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.inputContainer {
+    flex: 0 0 400px;
+    align-self: center;
+    background: #485859;
+}

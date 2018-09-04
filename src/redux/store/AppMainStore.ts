@@ -6,12 +6,14 @@ import { filterReducer } from "../reducers/FilterReducer";
 import { countriesTaggerReducer } from "../reducers/CountriesTaggerReducer";
 import { createBrowserHistory } from "history";
 import { connectRouter, routerMiddleware } from "connected-react-router";
+import { mixerReducer } from "../reducers/MixerReducer";
 
 // TODO: think how to avoid having keys name like "*state" but containing reducers
 const rootReducer = combineReducers({
 	cocktailListState: cocktailListReducer,
 	componentsTagCloudState: componentsTaggerReducer,
 	countriesTagCloudState: countriesTaggerReducer,
+	mixerState: mixerReducer,
 	filterState: filterReducer,
 });
 

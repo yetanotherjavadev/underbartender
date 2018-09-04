@@ -1,16 +1,16 @@
 import * as React from "react";
 import { Component } from "react";
 import "./style/mainLayout.css";
-import CocktailWidgetContainer from "../cocktailwidget/CocktailWidgetContainer";
-import CocktailsListContainer from "../cocktailslist/CocktailsListContainer";
-import SimpleTagCloudComponent from "../tagcloud/simple/SimpleTagCloudComponent";
 import { FilterType } from "../../model/FilterType";
-import SearchableTagCloudComponent from "../tagcloud/searchable/SearchableTagCloudComponent";
 import { RouteComponentProps, withRouter } from "react-router";
-import StatusLineContainer from "../status/StatusLineContainer";
+import StatusLineContainer from "../../components/status/StatusLineContainer";
+import SearchableTagCloudComponent from "../../components/tagcloud/searchable/SearchableTagCloudComponent";
+import SimpleTagCloudComponent from "../../components/tagcloud/simple/SimpleTagCloudComponent";
+import CocktailWidgetContainer from "../../components/cocktailwidget/CocktailWidgetContainer";
+import CocktailsListContainer from "../../components/cocktailslist/CocktailsListContainer";
 
-// this is a filter page
-class FilterSelector extends Component<RouteComponentProps<any>> {
+// this is a filter page (the body)
+class FilterSelectorPage extends Component<RouteComponentProps<any>> {
 	public render() {
 		return (
 			<div className="mainLayout">
@@ -40,4 +40,4 @@ class FilterSelector extends Component<RouteComponentProps<any>> {
 	}
 }
 
-export default withRouter(FilterSelector);
+export default withRouter(FilterSelectorPage);
